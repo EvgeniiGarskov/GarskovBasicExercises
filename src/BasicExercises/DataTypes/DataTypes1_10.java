@@ -10,6 +10,13 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 1");
 
+        /*
+        Напишите программу на Java для преобразования температуры из Фаренгейта в градусы Цельсия.
+
+        Тестовые данные
+        Введите степень в градусах Фаренгейта: 212
+         */
+
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter degrees Fahrenheit: ");
@@ -28,6 +35,14 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 2");
 
+        /*
+        Напишите программу на Java, которая считывает число в дюймах и преобразует его в метры.
+        Примечание. Один дюйм равен 0,0254 метра.
+
+        Тестовые данные
+        Введите значение для дюйма: 1000
+         */
+
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter a number in inches: ");
@@ -44,12 +59,26 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 3");
 
+        /*
+        Напишите программу на Java, которая читает целое число от 0 до 1000 и добавляет все цифры в целое число.
+
+        Тестовые данные
+        Введите целое число от 0 до 1000: 565
+         */
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter an integer from 0 to 1000: ");
 //        long num1 = sc.nextLong();
 //        System.out.println("The sum of the digits is: " + sumDigits(num1));
 
         System.out.println("Exercise 4");
+
+        /*
+        Напишите программу на Java для преобразования минут в количество лет и дней.
+
+        Тестовые данные
+        Введите количество минут: 3456789
+         */
 
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
@@ -72,6 +101,13 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 5");
 
+        /*
+        Напишите программу на Java, которая печатает текущее время в GMT.
+
+        Тестовые данные
+        Введите смещение часового пояса в GMT: 256
+         */
+
 //        Scanner input = new Scanner(System.in);
 //        System.out.print("Input the time zone offset to GMT: ");
 //        long timeZoneChange = input.nextInt();
@@ -85,6 +121,14 @@ public class DataTypes1_10 {
 //        System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond);
 
         System.out.println("Exercise 6");
+
+        /*
+        Написать Java-программу для вычисления индекса массы тела (BMI).
+
+        Тестовые данные
+        Вес ввода в фунтах: 452
+        Высота ввода в дюймах: 72
+         */
 
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
@@ -105,6 +149,17 @@ public class DataTypes1_10 {
 //        System.out.print("Body Mass Index is " + BMI+"\n");
 
         System.out.println("Exercise 7");
+
+        /*
+        Напишите Java-программу для отображения скорости в метрах в секунду, в километрах в час и в милях в час.
+        Примечание: 1 миля = 1609 метров
+
+        Тестовые данные
+        Расстояние ввода в метрах: 2500
+        Входной час: 5
+        Минут ввода: 56
+        Входные секунды: 23
+         */
 
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
@@ -149,6 +204,13 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 8");
 
+        /*
+        Напишите программу на Java, которая читает число и отображает квадрат, куб и четвертую степень.
+
+        Тестовые данные
+        Введите значение длины стороны: 15
+         */
+
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the side length value: ");
@@ -170,6 +232,15 @@ public class DataTypes1_10 {
 
         System.out.println("Exercise 9");
 
+        /*
+        Напишите программу на Java, которая принимает два целых числа, а затем печатает сумму, разницу, произведение, среднее значение,
+        расстояние (разность между целыми числами), максимум (большее из двух целых), минимум (меньшее из двух целые числа).
+
+        Тестовые данные
+        Введите 1-е целое число: 25
+        Введите второе целое число: 5
+         */
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the first integer: ");
 //        int num1 = sc.nextInt();
@@ -185,6 +256,13 @@ public class DataTypes1_10 {
 //        System.out.printf("Min integer: %d%n", Math.min(num1, num2));
 
         System.out.println("Exercise 10");
+
+        /*
+        Напишите программу на Java, чтобы разбить целое число на последовательность отдельных цифр.
+
+        Тестовые данные
+        Введите шесть неотрицательных цифр: 123456
+         */
 
         //Мой вариант
 //        Scanner sc = new Scanner(System.in);
