@@ -224,7 +224,118 @@ public class Conditional_operators1_32 {
 //        {
 //            System.out.println("Zero");
 //        }
+
+        System.out.println("Exercise 5");
+
+        /*
+        Напишите программу на Java, которая хранит число от пользователя и генерирует целое число от 1 до 7 и отображает название дня недели.
+
+        Тестовые данные
+        Введите номер: 3
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a number: ");
+//        int dayOfWeek = sc.nextInt();
+//
+//        if (dayOfWeek == 1) {
+//            System.out.println("Today is Monday");
+//        } else if (dayOfWeek == 2) {
+//            System.out.println("Today is Tuesday");
+//        } else if (dayOfWeek == 3) {
+//            System.out.println("Today is Wednesday");
+//        } else if (dayOfWeek == 4) {
+//            System.out.println("Today is Thursday");
+//        } else if (dayOfWeek == 5) {
+//            System.out.println("Today is Friday");
+//        } else if (dayOfWeek == 6) {
+//            System.out.println("Today is Saturday");
+//        } else if (dayOfWeek == 7) {
+//            System.out.println("Today is Sunday");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input number: ");
+//        int day = in.nextInt();
+//        System.out.println(getDayName(day));
+
+        System.out.println("Exercise 6");
+
+        /*
+        Напишите программу на Java, которая считывает два числа с плавающей запятой и проверяет,
+        являются ли они одинаковыми с точностью до трех знаков после запятой.
+
+        Тестовые данные
+        Входное число с плавающей точкой: 1256
+        Введите число с плавающей точкой другого числа: 3254
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the first floating point number: ");
+//        double num1 = sc.nextDouble();
+//        System.out.println("Enter the second floating point number: ");
+//        double num2 = sc.nextDouble();
+//
+//        double epsilon = 0.001d;
+//
+//        if (Math.abs(num1 - num2) < epsilon) {
+//            System.out.println("The numbers are equal");
+//        } else {
+//            System.out.println("Not equal");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input floating-point number: ");
+//        double x = in.nextDouble();
+//        System.out.print("Input floating-point another number: ");
+//        double y = in.nextDouble();
+//        x = Math.round(x * 1000);
+//        x = x / 1000;
+//        y = Math.round(y * 1000);
+//        y = y / 1000;
+//        if (x == y)
+//        {
+//            System.out.println("They are the same up to three decimal places");
+//        }
+//        else
+//        {
+//            System.out.println("They are different");
+//        }
     }
+
+//    public static String getDayName(int day) {
+//        String dayName = "";
+//        switch (day) {
+//            case 1:
+//                dayName = "Monday";
+//                break;
+//            case 2:
+//                dayName = "Tuesday";
+//                break;
+//            case 3:
+//                dayName = "Wednesday";
+//                break;
+//            case 4:
+//                dayName = "Thursday";
+//                break;
+//            case 5:
+//                dayName = "Friday";
+//                break;
+//            case 6:
+//                dayName = "Saturday";
+//                break;
+//            case 7:
+//                dayName = "Sunday";
+//                break;
+//            default:
+//                dayName = "Invalid day range";
+//        }
+//        return dayName;
+//    }
 }
 
 
