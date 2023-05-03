@@ -305,6 +305,388 @@ public class Conditional_operators1_32 {
 //        {
 //            System.out.println("They are different");
 //        }
+
+        System.out.println("Exercise 7");
+
+        /*
+        Напишите программу на Java, чтобы узнать количество дней в месяце.
+
+        Тестовые данные
+        Введите номер месяца: 2
+        Введите год: 2016
+         */
+
+//        Scanner input = new Scanner(System.in);
+//        int number_Of_DaysInMonth = 0;
+//        String MonthOfName ="Unknown";
+//        System.out.print("Input a month number: ");
+//        int month = input.nextInt();
+//        System.out.print("Input a year: ");
+//        int year = input.nextInt();
+//        switch (month) {
+//            case 1:
+//                MonthOfName ="January";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 2:
+//                MonthOfName ="February";
+//                if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+//                    number_Of_DaysInMonth = 29;
+//                } else {
+//                    number_Of_DaysInMonth = 28;
+//                }
+//                break;
+//            case 3:
+//                MonthOfName ="March";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 4:
+//                MonthOfName ="April";
+//                number_Of_DaysInMonth = 30;
+//                break;
+//            case 5:
+//                MonthOfName ="May";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 6:
+//                MonthOfName ="June";
+//                number_Of_DaysInMonth = 30;
+//                break;
+//            case 7:
+//                MonthOfName ="July";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 8:
+//                MonthOfName ="August";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 9:
+//                MonthOfName ="September";
+//                number_Of_DaysInMonth = 30;
+//                break;
+//            case 10:
+//                MonthOfName ="October";
+//                number_Of_DaysInMonth = 31;
+//                break;
+//            case 11:
+//                MonthOfName ="November";
+//                number_Of_DaysInMonth = 30;
+//                break;
+//            case 12:
+//                MonthOfName ="December";
+//                number_Of_DaysInMonth = 31;
+//        }
+//        System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n");
+
+        System.out.println("Exercise 8");
+
+        /*
+        Напишите программу на Java, в которой пользователю нужно предоставить один символ из алфавита.
+        Распечатать гласный согласного, в зависимости от ввода пользователя.
+        Если пользовательский ввод не является буквой (между a и z или A и Z) или является строкой длиной> 1, выведите сообщение об ошибке.
+
+        Тестовые данные
+        Введите алфавит: p
+         */
+
+        //Мой вариант
+//        String vowels = "A, E, I, O, U, Y, a, e, i, o, u, y";
+//        String consonants = "B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z, b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, z";
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the alphabet character: ");
+//        String str = sc.nextLine();
+//
+//        if (str.length() > 1) {
+//            System.out.println("Error, enter one character!");
+//        } else if (vowels.contains(str)) {
+//            System.out.println("The letter is a vowel");
+//        } else if (consonants.contains(str)) {
+//            System.out.println("The letter is consonant");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input an alphabet: ");
+//        String input = in.next().toLowerCase();
+//        boolean uppercase = input.charAt(0) >= 65 && input.charAt(0) <= 90;
+//        boolean lowercase = input.charAt(0) >= 97 && input.charAt(0) <= 122;
+//        boolean vowels = input.equals("a") || input.equals("e") || input.equals("i")
+//                || input.equals("o") || input.equals("u");
+//        if (input.length() > 1)
+//        {
+//            System.out.println("Error. Not a single character.");
+//        }
+//        else if (!(uppercase || lowercase))
+//        {
+//            System.out.println("Error. Not a letter. Enter uppercase or lowercase letter.");
+//        }
+//        else if (vowels)
+//        {
+//            System.out.println("Input letter is Vowel");
+//        }
+//        else
+//        {
+//            System.out.println("Input letter is Consonant");
+//        }
+
+        System.out.println("Exercise 9");
+
+        /*
+        Напишите программу на Java, которая берет год от пользователя, и напечатайте, является ли этот год високосным или нет.
+
+        Тестовые данные
+        Введите год: 2016
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the year: ");
+//        int year = sc.nextInt();
+//
+//        if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+//            System.out.println("Leap year");
+//        } else {
+//            System.out.println("A normal year");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input the year: ");
+//        int year = in.nextInt();
+//        boolean x = (year % 4) == 0;
+//        boolean y = (year % 100) != 0;
+//        boolean z = ((year % 100 == 0) && (year % 400 == 0));
+//        if (x && (y || z))
+//        {
+//            System.out.println(year + " is a leap year");
+//        }
+//        else
+//        {
+//            System.out.println(year + " is not a leap year");
+//        }
+
+        System.out.println("Exercise 10");
+
+        /*
+        Напишите программу на Java для отображения первых 10 натуральных чисел.
+         */
+
+        //Мой вариант
+//        System.out.println("The first 10 natural numbers:");
+//
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.println(i);
+//        }
+
+        //Вариант 2
+//        int i;
+//        System.out.println ("The first 10 natural numbers are:\n");
+//        for (i=1;i<=10;i++)
+//        {
+//            System.out.println (i);
+//        }
+//        System.out.println ("\n");
+
+        System.out.println("Exercise 11");
+
+        /*
+        Напишите программу на Java для отображения первых n натуральных чисел и их суммы.
+
+        Тестовые данные
+        Введите номер: 7
+         */
+
+        //Мой вариант
+//        int sum = 0;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        System.out.println("First natural numbers: " + num);
+//        for (int i = 1; i <= num; i++) {
+//            System.out.println(i);
+//            sum += i;
+//        }
+//        System.out.println("Sum of natural numbers: " + sum);
+
+        //Вариант 2
+//        int i, n, sum=0;
+//        {
+//            Scanner in = new Scanner(System.in);
+//            System.out.print("Input number: ");
+//            n = in.nextInt();
+//        }
+//        System.out.println("The first n natural numbers are : "+n);
+//
+//        for(i=1;i<=n;i++)
+//        {
+//            System.out.println(i);
+//            sum+=i;
+//        }
+//        System.out.println("The Sum of Natural Number upto "+n+ " terms : " +sum);
+
+        System.out.println("Exercise 12");
+
+        /*
+        Напишите программу на Java, чтобы ввести 5 цифр с клавиатуры и найти их сумму и среднее.
+
+        Тестовые данные
+        Введите 5 цифр: 1 2 3 4 5
+         */
+
+        //Мой вариант
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter 5 numbers separated by a space: ");
+//
+//        int a = scanner.nextInt();
+//        int b = scanner.nextInt();
+//        int c = scanner.nextInt();
+//        int d = scanner.nextInt();
+//        int e = scanner.nextInt();
+//
+//        System.out.println("Sum of numbers: " + (a + b + c + d + e));
+//        System.out.println("Average value: " + (a + b + c + d + e) / 5);
+
+        //Мой вариант 2
+//        int sum = 0;
+//        int count = 0;
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter 5 numbers separated by a space: ");
+//
+//        while (sc.hasNextInt()) {
+//            int num = sc.nextInt();
+//            sum += num;
+//            count++;
+////             if (sc.hasNextInt()) {
+////               System.out.print(sc.nextInt());
+////             } else {
+////               sc.next();
+////             }
+//        }
+//        if (count > 0) {
+//            int average = sum / count;
+//            System.out.println("Sum of numbers: " + sum);
+//            System.out.println("Average value: " + average);
+//        } else {
+//            System.out.println("No integers were entered. The average value cannot be calculated.");
+//        }
+
+        //Вариант 2
+//        int i,n=0,s=0;
+//        double avg;
+//        {
+//
+//            System.out.println("Input the 5 numbers : ");
+//
+//        }
+//        for (i=0;i<5;i++)
+//        {
+//            Scanner in = new Scanner(System.in);
+//            n = in.nextInt();
+//
+//            s +=n;
+//        }
+//        avg=s/5;
+//        System.out.println("The sum of 5 no is : " +s+"\nThe Average is : " +avg);
+
+        System.out.println("Exercise 13");
+
+        /*
+        Напишите программу на Java для отображения куба числа с точностью до целого числа.
+
+        Тестовые данные
+        Введите количество терминов: 4
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer");
+//        int num = sc.nextInt();
+//
+//        for (int i = 1; i <= num; i++) {
+//            System.out.println(i + " in a cube: " + Math.pow(i, 3));
+//        }
+
+        //Вариант 2
+//        int i,n;
+//        System.out.print("Input number of terms : ");
+//        Scanner in = new Scanner(System.in);
+//        n = in.nextInt();
+//        for(i=1;i<=n;i++)
+//        {
+//            System.out.println("Number is : " +i+" and cube of " +i+" is : "+(i*i*i));
+//        }
+
+        System.out.println("Exercise 14");
+
+        /*
+        Напишите программу на Java для отображения таблицы умножения заданного целого числа.
+
+        Тестовые данные
+        Введите число (Таблица для расчета): Введите число членов: 5
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        for (int i = 0; i <= num; i++) {
+//            System.out.println(num + " x " + i + " = " + num * i);
+//        }
+
+        //Вариант 2
+//        int j,n;
+//        System.out.print("Input the number(Table to be calculated): ");
+//        {
+//            System.out.print("Input number of terms : ");
+//            Scanner in = new Scanner(System.in);
+//            n = in.nextInt();
+//            System.out.println ("\n");
+//            for(j=0;j<=n;j++)
+//
+//                System.out.println(n+" X "+j+" =" +n*j);
+//        }
+
+        System.out.println("Exercise 15");
+
+        /*
+        Напишите программу на Java для отображения n нечетного натурального числа и их суммы.
+
+        Тестовые данные
+        Введите количество терминов: 5
+         */
+
+        //Мой вариант
+//        int sum = 0;
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        System.out.println("First " + num + " odd numbers: ");
+//        for (int i = 1; i <= num; i++) {
+//            System.out.println(2 * i - 1);
+//            sum += (2 * i - 1);
+//        }
+//        System.out.println("Sum of odd numbers: " + sum);
+
+        //Вариант 2
+        int i,n,sum=0;
+        System.out.print("Input number of terms is: ");
+        {
+            Scanner in = new Scanner(System.in);
+            n = in.nextInt();
+            System.out.println ("\nThe odd numbers are :");
+            for(i=1;i<=n;i++)
+            {
+                System.out.println (2*i-1);
+                sum+=2*i-1;
+            }
+            System.out.println ("The Sum of odd Natural Number upto " +n+" terms is: " +sum);
+        }
     }
 
 //    public static String getDayName(int day) {
