@@ -674,19 +674,239 @@ public class Conditional_operators1_32 {
 //        System.out.println("Sum of odd numbers: " + sum);
 
         //Вариант 2
-        int i,n,sum=0;
-        System.out.print("Input number of terms is: ");
-        {
-            Scanner in = new Scanner(System.in);
-            n = in.nextInt();
-            System.out.println ("\nThe odd numbers are :");
-            for(i=1;i<=n;i++)
-            {
-                System.out.println (2*i-1);
-                sum+=2*i-1;
-            }
-            System.out.println ("The Sum of odd Natural Number upto " +n+" terms is: " +sum);
-        }
+//        int i,n,sum=0;
+//        System.out.print("Input number of terms is: ");
+//        {
+//            Scanner in = new Scanner(System.in);
+//            n = in.nextInt();
+//            System.out.println ("\nThe odd numbers are :");
+//            for(i=1;i<=n;i++)
+//            {
+//                System.out.println (2*i-1);
+//                sum+=2*i-1;
+//            }
+//            System.out.println ("The Sum of odd Natural Number upto " +n+" terms is: " +sum);
+
+        System.out.println("Exercise 16");
+
+        /*
+        Напишите программу на Java для отображения шаблона в виде прямоугольного треугольника с номером.
+        Шаблон выглядит следующим образом:
+        1
+        12
+        123
+        1234
+        12345
+        123456
+        1234567
+        12345678
+        123456789
+        12345678910
+
+        Тестовые данные
+        Введите количество строк: 10
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        for (int i = 1; i <= num; i++) {
+//            for (int y = 1; y <= i; y++)
+//                System.out.print(y);
+//            System.out.println(" ");
+//        }
+
+        //Вариант 2
+//        int i,j,n;
+//        System.out.print("Input number of rows : ");
+//        Scanner in = new Scanner(System.in);
+//        n = in.nextInt();
+//        for(i=1;i<=n;i++)
+//        {
+//            for(j=1;j<=i;j++)
+//                System.out.print(j);
+//            System.out.println("");
+//        }
+
+        System.out.println("Exercise 17");
+
+        /*
+        Напишите программу на Java для печати такого шаблона, как прямоугольный треугольник с числом, которое будет повторять число в ряду.
+        Шаблон выглядит следующим образом:
+        1
+        22
+        333
+        4444
+
+        Тестовые данные
+        Введите число n: 4
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        for (int i = 1; i <= num; i++) {
+//            for (int y = 1; y <= i; y++)
+//                System.out.print(i);
+//            System.out.println(" ");
+//        }
+
+        //Вариант 2
+//        int i,j,n;
+//        System.out.print("Input number of n : ");
+//        Scanner in = new Scanner(System.in);
+//        n = in.nextInt();
+//
+//        for(i=1;i<=n;i++)
+//        {
+//            for(j=1;j<=i;j++)
+//                System.out.print(i);
+//            System.out.println("");
+//        }
+
+        System.out.println("Exercise 18");
+
+        /*
+        Напишите программу на Java для печати такого шаблона, как прямоугольный треугольник с числом, увеличенным на 1.
+        Шаблон выглядит следующим образом:
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+
+        Тестовые данные
+        Введите количество строк: 4
+         */
+
+        //Мой вариант
+//        int k = 1;
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int num = sc.nextInt();
+//
+//        for (int i = 1; i <= num; i++) {
+//            for (int y = 1; y <= i; y++)
+//                System.out.print(k++);
+//            System.out.println(" ");
+//        }
+
+        System.out.println("Exercise 19");
+
+        /*
+        Напишите программу на Java для печати такого шаблона, как пирамида с номером, который будет повторять число в той же строке.
+        Шаблон выглядит следующим образом:
+           1
+          2 2
+         3 3 3
+        4 4 4 4
+
+        Тестовые данные
+        Введите количество строк: 4
+         */
+
+//        int i,j,n,s,x;
+//        System.out.print ("Input number of rows : ");
+//        Scanner in = new Scanner(System.in);
+//        n = in.nextInt();
+//        s=n+4-1;
+//        for(i=1;i<=n;i++)
+//        {
+//            for(x=s;x!=0;x--)
+//            {
+//                System.out.print(" ");
+//            }
+//            for(j=1;j<=i;j++)
+//            {
+//                System.out.print(i+" ");
+//            }
+//            System.out.println();
+//            s--;
+//        }
+
+        System.out.println("Exercise 20");
+
+        /*
+        Напишите программу на Java для печати треугольника Флойд.
+        Шаблон выглядит следующим образом:
+        1
+        01
+        101
+        0101
+        10101
+
+        Тестовые данные
+        Введите количество строк: 5
+         */
+
+//        int i,j,n,p,q;
+//        System.out.print("Input number of rows : ");
+//        Scanner in = new Scanner(System.in);
+//        n = in.nextInt();
+//        for(i=1;i<=n;i++)
+//        {
+//            if(i%2==0)
+//            { p=1;q=0;}
+//            else
+//            { p=0;q=1;}
+//            for(j=1;j<=i;j++)
+//                if(j%2==0)
+//                    System.out.print(p);
+//                else
+//                    System.out.print(q);
+//            System.out.println("");
+//        }
+
+        System.out.println("Exercise 21");
+
+        /*
+        Напишите программу на Java для отображения шаблона в виде ромба.
+        Шаблон выглядит следующим образом:
+              *
+             ***
+            *****
+           *******
+          *********
+         ***********
+        *************
+         ***********
+          *********
+           *******
+            *****
+             ***
+              *
+
+        Тестовые данные
+        Введите количество строк (половина ромба): 7
+         */
+
+//        int i,j,r;
+//        System.out.print("Input number of rows (half of the diamond) : ");
+//        Scanner in = new Scanner(System.in);
+//        r = in.nextInt();
+//        for(i=0;i<=r;i++)
+//        {
+//            for(j=1;j<=r-i;j++)
+//                System.out.print(" ");
+//            for(j=1;j<=2*i-1;j++)
+//                System.out.print("*");
+//            System.out.print("\n");
+//        }
+//
+//        for(i=r-1;i>=1;i--)
+//        {
+//            for(j=1;j<=r-i;j++)
+//                System.out.print(" ");
+//            for(j=1;j<=2*i-1;j++)
+//                System.out.print("*");
+//            System.out.print("\n");
+//        }
+
+        System.out.println("Exercise 22");
     }
 
 //    public static String getDayName(int day) {
