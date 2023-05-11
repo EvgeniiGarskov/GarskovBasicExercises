@@ -907,6 +907,573 @@ public class Conditional_operators1_32 {
 //        }
 
         System.out.println("Exercise 22");
+
+        /*
+        Напишите программу на Java для отображения треугольника Паскаля.
+        Шаблон выглядит следующим образом:
+            1
+           1 1
+          1 2 1
+         1 3 3 1
+        1 4 6 4 1
+
+        Тестовые данные
+        Введите количество строк: 5
+         */
+
+//        int no_row,c=1,blk,i,j;
+//        System.out.print("Input number of rows: ");
+//        Scanner in = new Scanner(System.in);
+//        no_row = in.nextInt();
+//        for(i=0;i<no_row;i++)
+//        {
+//            for(blk=1;blk<=no_row-i;blk++)
+//                System.out.print(" ");
+//            for(j=0;j<=i;j++)
+//            {
+//                if (j==0||i==0)
+//                    c=1;
+//                else
+//                    c=c*(i-j+1)/j;
+//                System.out.print(" "+c);
+//            }
+//            System.out.print("\n");
+//        }
+
+        System.out.println("Exercise 23");
+
+        /*
+        Напишите Java-программу для генерации следующего * треугольника.
+        Шаблон выглядит следующим образом:
+        ******
+         *****
+          ****
+           ***
+            **
+             *
+
+        Тестовые данные
+        Введите количество строк: 6
+         */
+
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input the number: ");
+//        int n = in.nextInt();
+//        for (int i = n; i > 0; i--)
+//        {
+//            for (int spc = n - i; spc > 0; spc--)
+//            {
+//                System.out.print(" ");
+//            }
+//            for (int j = 0; j < i; j++)
+//            {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+        System.out.println("Exercise 24");
+
+        /*
+        Напишите Java-программу для генерации следующего треугольника @.
+        Шаблон выглядит следующим образом:
+             @
+            @@
+           @@@
+          @@@@
+         @@@@@
+        @@@@@@
+
+        Тестовые данные
+        Введите число: 6
+         */
+
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input the number: ");
+//        int n = in.nextInt();
+//        for (int i = 0; i < n; i++)
+//        {
+//            for (int spc = n - i; spc > 0; spc--)
+//            {
+//                System.out.print(" ");
+//            }
+//            for (int j = 0; j <= i; j++)
+//            {
+//                System.out.print("@");
+//            }
+//            System.out.println();
+//        }
+
+        System.out.println("Exercise 25");
+
+        /*
+        Напишите Java-программу для отображения структуры номера ромба.
+        Шаблон выглядит следующим образом:
+              1
+             212
+            32123
+           4321234
+          543212345
+         65432123456
+        7654321234567
+         65432123456
+          543212345
+           4321234
+            32123
+             212
+              1
+
+        Тестовые данные
+        Введите число: 7
+         */
+
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input the number:  ");
+//        int n = in.nextInt();
+//        int count = 1;
+//        int no_of_spaces = 1;
+//        int start = 0;
+//        for (int i = 1; i < (n * 2); i++)
+//        {
+//            for (int spc = n - no_of_spaces; spc > 0; spc--)
+//            {
+//                System.out.print(" ");
+//            }
+//            if (i < n)
+//            {
+//                start = i;          //for number
+//                no_of_spaces++;    //for spaces
+//            } else
+//            {
+//                start = n * 2 - i;   //for number
+//                no_of_spaces--;      //for space
+//            }
+//            for (int j = 0; j < count; j++)
+//            {
+//                System.out.print(start);
+//                if (j < count / 2)
+//                {
+//                    start--;
+//                } else
+//                {
+//                    start++;
+//                }
+//            }
+//            if (i < n)
+//            {
+//                count = count + 2;
+//            } else {
+//                count = count - 2;
+//            }
+//            System.out.println();
+//        }
+
+        System.out.println("Exercise 26");
+
+        /*
+        Напишите Java-программу для отображения следующей структуры ромба символов.
+        Шаблон выглядит следующим образом:
+              A
+             ABA
+            ABCBA
+           ABCDCBA
+          ABCDEDCBA
+         ABCDEFEDCBA
+        ABCDEFGFEDCBA
+         ABCDEFEDCBA
+          ABCDEDCBA
+           ABCDCBA
+            ABCBA
+             ABA
+              A
+
+        Тестовые данные
+        Введите число: 7
+         */
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Input the number: ");
+//        int n = sc.nextInt();
+//        int count = 1;
+//        int count2 = 1;
+//        char c ='A';
+//        for (int i = 1; i < (n * 2); i++)
+//        {
+//            for (int spc = n - count2; spc > 0; spc--)
+//            //print space
+//            {
+//                System.out.print(" ");
+//            }
+//            if (i < n)
+//            {
+//                count2++;
+//            }
+//            else
+//            {
+//                count2--;
+//            }
+//            for (int j = 0; j < count; j++)
+//            {
+//                System.out.print(c);//print Character
+//                if (j < count / 2)
+//                {
+//                    c++;
+//                } else
+//                {
+//                    c--;
+//                }
+//            }
+//            if (i < n)
+//            {
+//                count = count + 2;
+//            }
+//            else
+//            {
+//                count = count - 2;
+//            }
+//            c ='A';
+//            System.out.println();
+//        }
+
+        System.out.println("Exercise 27");
+
+        /*
+        Напишите программу на Java, которая читает целое число и проверяет, является ли оно отрицательным, нулевым или положительным.
+
+        Тестовые данные
+        Введите число: 7
+         */
+
+        //Мой вариант
+//        System.out.print("Enter an integer: ");
+//        Scanner in = new Scanner(System.in);
+//        int num = in.nextInt();
+//
+//        if (num == 0) {
+//            System.out.println("The number is zero");
+//        } else if (num > 0) {
+//            System.out.println("The number is positive");
+//        } else {
+//            System.out.println("The number is negative");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input a number: ");
+//        int n = in.nextInt();
+//        if (n > 0)
+//        {
+//            System.out.println("Number is positive");
+//        }
+//        else if (n < 0)
+//        {
+//            System.out.println("Number is negative");
+//        }
+//        else
+//        {
+//            System.out.println("Number is zero");
+//        }
+
+        System.out.println("Exercise 28");
+
+        /*
+        Напишите программу на Java, которая читает число с плавающей точкой. Если число равно нулю, оно печатает «ноль»,
+        в противном случае выведите «положительный» или «отрицательный». Добавьте «маленький», если абсолютное значение
+        числа меньше 1, или «большой», если он превышает 1 000 000.
+
+        Тестовые данные
+        Введите число: -2534
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a number: ");
+//        double num = sc.nextDouble();
+//
+//        if (num > 0) {
+//            if (num > 1000000) {
+//                System.out.println("A large positive number");
+//            } else if (num < 1) {
+//                System.out.println("A small positive number");
+//            } else {
+//                System.out.println("Positive number");
+//            }
+//        } else if (num < 0) {
+//            if (Math.abs(num) > 1000000) {
+//                System.out.println("A large negative number");
+//            } else if (Math.abs(num) < 1) {
+//                System.out.println("A small negative number");
+//            } else {
+//                System.out.println("Negative number");
+//            }
+//        } else {
+//            System.out.println("Zero");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input a number: ");
+//        double n = in.nextDouble();
+//        if (n > 0)
+//        {
+//            if (n < 1)
+//            {
+//                System.out.println("Positive small");
+//            }
+//            else if (n > 1000000)
+//            {
+//                System.out.println("Positive large");
+//            }
+//            else
+//            {
+//                System.out.println("Positive");
+//            }
+//        }
+//        else if (n < 0)
+//        {
+//            if (Math.abs(n) < 1)
+//            {
+//                System.out.println("Negative small");
+//            }
+//            else if (Math.abs(n) > 1000000)
+//            {
+//                System.out.println("Negative large");
+//            }
+//            else
+//            {
+//                System.out.println("Negative");
+//            }
+//        }
+//        else
+//        {
+//            System.out.println("Zero");
+//        }
+
+        System.out.println("Exercise 29");
+
+        /*
+        Напишите программу на Java, которая читает положительное целое число и подсчитывает количество цифр,
+        которое имеет число (менее десяти миллиардов).
+
+        Тестовые данные
+        Введите целое число менее десяти миллиардов: 125463
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        long num = sc.nextLong();
+//
+//        if (num >= 10_000_000_000L) {
+//            System.out.println("The number is greater 10 000 000 000!");
+//        } else {
+//            int len = String.valueOf(num).length();
+//            // int len = (int) (Math.log10(num) + 1);
+//            System.out.println("The number of characters in the number: " + len);
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input an integer number less than ten billion: ");
+//        if (in.hasNextLong())
+//        {
+//            long n = in.nextLong();
+//            if (n < 0)
+//            {
+//                n *= -1;
+//            }
+//            if (n >= 10000000000L)
+//            {
+//                System.out.println("Number is greater or equals 10,000,000,000!");
+//            }
+//            else
+//            {
+//                int digits = 1;
+//                if (n >= 10 && n < 100)
+//                {
+//                    digits = 2;
+//                }
+//                else if (n >= 100 && n < 1000)
+//                {
+//                    digits = 3;
+//                }
+//                else if (n >= 1000 && n < 10000)
+//                {
+//                    digits = 4;
+//                }
+//                else if (n >= 10000 && n < 100000)
+//                {
+//                    digits = 5;
+//                }
+//                else if (n >= 100000 && n < 1000000)
+//                {
+//                    digits = 6;
+//                }
+//                else if (n >= 1000000 && n < 10000000)
+//                {
+//                    digits = 7;
+//                }
+//                else if (n >= 10000000 && n < 100000000)
+//                {
+//                    digits = 8;
+//                }
+//                else if (n >= 100000000 && n < 1000000000)
+//                {
+//                    digits = 9;
+//                }
+//                else if (n >= 1000000000 && n < 10000000000L)
+//                {
+//                    digits = 10;
+//                }
+//                System.out.println("Number of digits in the number: " + digits);
+//            }
+//        }
+//        else
+//        {
+//            System.out.println("The number is not an integer");
+//        }
+
+        System.out.println("Exercise 30");
+
+        /*
+        Напишите программу на Java, которая принимает три числа и печатает «Все числа равны», если все три числа равны,
+        «Все числа различны», если все три числа различны, и «Ни все не равны или различны» в противном случае.
+
+        Тестовые данные
+        Введите первое число: 2564
+        Введите второе число: 3526
+        Введите третье число: 2456
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the first integer: ");
+//        int num1 = sc.nextInt();
+//        System.out.println("Enter the second integer: ");
+//        int num2 = sc.nextInt();
+//        System.out.println("Enter the third integer: ");
+//        int num3 = sc.nextInt();
+//
+//        if (num1 == num2 && num1 == num3) {
+//            System.out.println("The numbers are equal");
+//        } else if (num1 == num2 || num1 == num3 || num2 == num3) {
+//            System.out.println("Not all numbers are equal");
+//        } else {
+//            System.out.println("The numbers are not equal");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input first number: ");
+//        int x = in.nextInt();
+//        System.out.print("Input second number: ");
+//        int y = in.nextInt();
+//        System.out.print("Input third number: ");
+//        int z = in.nextInt();
+//        if (x == y && x == z)
+//        {
+//            System.out.println("All numbers are equal");
+//        }
+//        else if ((x == y) || (x == z) || (z == y))
+//        {
+//            System.out.println("Neither all are equal or different");
+//        }
+//        else
+//        {
+//            System.out.println("All numbers are different");
+//        }
+
+        System.out.println("Exercise 31");
+
+        /*
+        Напишите программу, которая принимает три числа от пользователя и печатает «увеличивающиеся»,
+        если числа расположены в порядке возрастания, «убывающие», если числа находятся в порядке убывания,
+        и «Ни возрастающий, ни убывающий порядок» в противном случае.
+
+        Тестовые данные:
+        Введите первое число: 1524
+        Введите второе число: 2345
+        Введите третье число: 3321
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the first integer: ");
+//        int num1 = sc.nextInt();
+//        System.out.println("Enter the second integer: ");
+//        int num2 = sc.nextInt();
+//        System.out.println("Enter the third integer: ");
+//        int num3 = sc.nextInt();
+//
+//        if (num1 > num2 && num2 > num3) {
+//            System.out.println("Numbers in descending order");
+//        } else if (num1 < num2 && num2 < num3) {
+//            System.out.println("Numbers in ascending order");
+//        } else {
+//            System.out.println("Neither ascending nor descending order");
+//        }
+
+        //Вариант 2
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Input first number: ");
+//        double x = in.nextDouble();
+//        System.out.print("Input second number: ");
+//        double y = in.nextDouble();
+//        System.out.print("Input third number: ");
+//        double z = in.nextDouble();
+//        if (x < y && y < z)
+//        {
+//            System.out.println("Increasing order");
+//        }
+//        else if (x > y && y > z)
+//        {
+//            System.out.println("Decreasing order");
+//        }
+//        else
+//        {
+//            System.out.println("Neither increasing or decreasing order");
+//        }
+
+        System.out.println("Exercise 32");
+
+        /*
+        Напишите программу на Java, которая принимает два числа с плавающей точкой и проверяет,
+        совпадают ли они с точностью до двух десятичных знаков.
+
+        Тестовые данные
+        Введите первое число с плавающей точкой: 12.35
+        Введите второе число с плавающей точкой: 25.34
+         */
+
+        //Мой вариант
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the first floating point number: ");
+//        double num1 = sc.nextDouble();
+//        System.out.println("Enter the second floating point number: ");
+//        double num2 = sc.nextDouble();
+//
+//        double epsilon = 0.01d;
+//
+//        if (Math.abs(num1 - num2) < epsilon) {
+//            System.out.println("The numbers are equal");
+//        } else {
+//            System.out.println("Not equal");
+//        }
+
+        //Вариант 2
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input first floating­point number: ");
+        double num1 = input.nextDouble();
+        System.out.print("Input second floating­point number: ");
+        double num2 = input.nextDouble();
+        input.close();
+
+        if (Math.abs(num1 - num2) <= 0.01) {
+            System.out.println("These numbers are the same.");
+        }
+        else {
+            System.out.println("These numbers are different.");
+        }
     }
 
 //    public static String getDayName(int day) {
