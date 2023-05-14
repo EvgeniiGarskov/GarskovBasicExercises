@@ -1,7 +1,6 @@
 package BasicExercises.Arrays;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Arrays1_53 {
 
@@ -291,6 +290,211 @@ public class Arrays1_53 {
 //        System.out.println(" Original Array: "+Arrays.toString(my_array));
 //        System.out.println(" Maximum value for the above array =" + max);
 //        System.out.println(" Minimum value for the above array =" + min);
+
+        System.out.println("Exercise 11");
+
+        /*
+        Напишите программу на Java, чтобы перевернуть массив целочисленных значений.
+         */
+
+        //Мой вариант
+//        Integer[] num = {5, 2, 7, 9, 6};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//
+//        reverse(num);
+//        System.out.println("Reverse array: " + Arrays.toString(num));
+//    }
+//        static void reverse(Integer[] num) {
+//        Collections.reverse(Arrays.asList(num));
+
+        //Вариант 2
+//        int[] my_array1 = {
+//                1789, 2035, 1899, 1456, 2013,
+//                1458, 2458, 1254, 1472, 2365,
+//                1456, 2165, 1457, 2456};
+//        System.out.println("Original array : "+Arrays.toString(my_array1));
+//        for(int i = 0; i < my_array1.length / 2; i++)
+//        {
+//            int temp = my_array1[i];
+//            my_array1[i] = my_array1[my_array1.length - i - 1];
+//            my_array1[my_array1.length - i - 1] = temp;
+//        }
+//        System.out.println("Reverse array : "+Arrays.toString(my_array1));
+
+        System.out.println("Exercise 12");
+
+        /*
+        Напишите программу на Java, чтобы найти повторяющиеся значения в массиве целочисленных значений.
+         */
+
+//        int[] my_array = {1, 2, 5, 5, 6, 6, 7, 2};
+//
+//        for (int i = 0; i < my_array.length-1; i++)
+//        {
+//            for (int j = i+1; j < my_array.length; j++)
+//            {
+//                if ((my_array[i] == my_array[j]) && (i != j))
+//                {
+//                    System.out.println("Duplicate Element : "+my_array[j]);
+//                }
+//            }
+//        }
+
+        System.out.println("Exercise 13");
+
+        /*
+        Напишите программу на Java, чтобы найти повторяющиеся значения в массиве строковых значений.
+         */
+
+        //Мой вариант
+//        String[] my_array = {"bcd", "abd", "jude", "bcd", "oiu"};
+//        System.out.println("The original array: " + Arrays.toString(my_array));
+//
+//        for (int i = 0; i < my_array.length-1; i++) {
+//            for (int j = i+1; j < my_array.length; j++) {
+//                if ((my_array[i] == my_array[j]) && (i != j)) {
+//                    System.out.println("Duplicate Element : "+my_array[j]);
+//                }
+//            }
+//        }
+
+        //Вариант 2
+//        String[] my_array = {"bcd", "abd", "jude", "bcd", "oiu", "gzw", "oiu"};
+//
+//        for (int i = 0; i < my_array.length-1; i++)
+//        {
+//            for (int j = i+1; j < my_array.length; j++)
+//            {
+//                if( (my_array[i].equals(my_array[j])) && (i != j) )
+//                {
+//                    System.out.println("Duplicate Element is : "+my_array[j]);
+//                }
+//            }
+//        }
+
+        System.out.println("Exercise 14");
+
+        /*
+        Напишите программу на Java, чтобы найти общие элементы между двумя массивами (строковые значения).
+         */
+
+        //Мой вариант
+//        String[] my_array1 = {"Python", "JAVA", "PHP"};
+//        String[] my_array2 = {"MySQL", "Oracle", "PHP", "JAVA"};
+//        System.out.println("The original array 1: " + Arrays.toString(my_array1));
+//        System.out.println("The original array 2: " + Arrays.toString(my_array2));
+//
+//        Set<String> strarr = new HashSet<>();
+//
+//        for (int i = 0; i < my_array1.length; i++) {
+//            for (int j = 0; j < my_array2.length; j++) {
+//                if (my_array1[i] == my_array2[j]) {
+//                    strarr.add(my_array1[i]);
+//                }
+//            }
+//        }
+//        System.out.println("Duplicate Element : " + strarr);
+
+        //Вариант 2
+//        String[] array1 = {"Python", "JAVA", "PHP", "C#", "C++", "SQL"};
+//
+//        String[] array2 = {"MySQL", "SQL", "SQLite", "Oracle", "PostgreSQL", "DB2", "JAVA"};
+//
+//        System.out.println("Array1 : "+Arrays.toString(array1));
+//        System.out.println("Array2 : "+Arrays.toString(array2));
+//
+//        HashSet<String> set = new HashSet<String>();
+//
+//        for (int i = 0; i < array1.length; i++)
+//        {
+//            for (int j = 0; j < array2.length; j++)
+//            {
+//                if(array1[i].equals(array2[j]))
+//                {
+//                    set.add(array1[i]);
+//                }
+//            }
+//        }
+//
+//        System.out.println("Common element : "+(set));     //OUTPUT : [THREE, FOUR, FIVE]
+
+        System.out.println("Exercise 15");
+
+        /*
+        Напишите программу на Java, чтобы найти общие элементы между двумя массивами целых чисел.
+         */
+
+        //Мой вариант
+//        int[] my_array1 = {1, 2, 5};
+//        int[] my_array2 = {6, 5, 8, 1};
+//        System.out.println("The original array 1: " + Arrays.toString(my_array1));
+//        System.out.println("The original array 2: " + Arrays.toString(my_array2));
+//
+//        Set<Integer> numarr = new HashSet<>();
+//
+//        for (int i = 0; i < my_array1.length; i++) {
+//            for (int j = 0; j < my_array2.length; j++) {
+//                if (my_array1[i] == my_array2[j]) {
+//                    numarr.add(my_array1[i]);
+//                }
+//            }
+//        }
+//        System.out.println("Duplicate Element : " + numarr);
+
+        //Вариант 2
+//        int[] array1 = {1, 2, 5, 5, 8, 9, 7, 10};
+//        int[] array2 = {1, 0, 6, 15, 6, 4, 7, 0};
+//
+//        System.out.println("Array1 : "+Arrays.toString(array1));
+//        System.out.println("Array2 : "+Arrays.toString(array2));
+//
+//
+//        for (int i = 0; i < array1.length; i++)
+//        {
+//            for (int j = 0; j < array2.length; j++)
+//            {
+//                if(array1[i] == (array2[j]))
+//                {
+//
+//                    System.out.println("Common element is : "+(array1[i]));
+//                }
+//            }
+//        }
+
+        System.out.println("Exercise 16");
+
+        /*
+        Напишите Java-программу для удаления дублирующихся элементов из массива.
+         */
+
+        //Мой вариант
+//        Integer[] my_array = {10, 22, 10, 20, 11, 22};
+//
+//        System.out.println("The original array: " + Arrays.toString(my_array));
+//
+//        Set<Integer> numarr = new HashSet<>(Arrays.asList(my_array));
+//        System.out.println("Array without duplicates: " + numarr);
+
+        //Мой вариант 2
+//        Integer[] my_array = {10, 22, 10, 20, 11, 22};
+//        System.out.println("The original array: " + Arrays.toString(my_array));
+//
+//        ArrayList<Integer> numarr = new ArrayList<>(Arrays.asList(my_array));
+//        System.out.println("Dynamic array: " + numarr);
+//
+//        ArrayList<Integer> newNumarr = removeDuplicates(numarr);
+//        System.out.println("Array without duplicates: " + newNumarr);
+
+        //Вариант 2
+//        unique_array(new int[] {0, 3, -2, 4, 3, 2});
+//
+//        unique_array(new int[] {10, 22, 10, 20, 11, 22});
+
+        System.out.println("Exercise 17");
+
+        /*
+        Напишите программу на Java, чтобы найти второй по величине элемент в массиве.
+         */
     }
 //    public static boolean contains(int[] arr, int item) {
 //        for (int n : arr) {
@@ -357,5 +561,71 @@ public class Arrays1_53 {
 //                if (my_array[i + 1] > max) max = my_array[i + 1];
 //            }
 //        }
+//    }
+
+//    static void unique_array(int[] my_array)
+//    {
+//        System.out.println("Original Array : ");
+//
+//        for (int i = 0; i < my_array.length; i++)
+//        {
+//            System.out.print(my_array[i]+"\t");
+//        }
+//
+//        //Assuming all elements in input array are unique
+//
+//        int no_unique_elements = my_array.length;
+//
+//        //Comparing each element with all other elements
+//
+//        for (int i = 0; i < no_unique_elements; i++)
+//        {
+//            for (int j = i+1; j < no_unique_elements; j++)
+//            {
+//                //If any two elements are found equal
+//
+//                if(my_array[i] == my_array[j])
+//                {
+//                    //Replace duplicate element with last unique element
+//
+//                    my_array[j] = my_array[no_unique_elements-1];
+//
+//                    no_unique_elements--;
+//
+//                    j--;
+//                }
+//            }
+//        }
+//
+//        //Copying only unique elements of my_array into array1
+//
+//        int[] array1 = Arrays.copyOf(my_array, no_unique_elements);
+//
+//        //Printing arrayWithoutDuplicates
+//
+//        System.out.println();
+//
+//        System.out.println("Array with unique values : ");
+//
+//        for (int i = 0; i < array1.length; i++)
+//        {
+//            System.out.print(array1[i]+"\t");
+//        }
+//
+//        System.out.println();
+//
+//        System.out.println("---------------------------");
+//    }
+
+//    public static <Integer> ArrayList removeDuplicates(ArrayList<Integer> numarr) {
+//
+//        ArrayList<Integer> newNumarr = new ArrayList<>();
+//
+//        for (Integer element : numarr) {
+//            if (!newNumarr.contains(element)) {
+//                newNumarr.add(element);
+//            }
+//        }
+//        return newNumarr;
 //    }
 }
