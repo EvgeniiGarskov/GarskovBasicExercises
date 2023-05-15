@@ -495,6 +495,153 @@ public class Arrays1_53 {
         /*
         Напишите программу на Java, чтобы найти второй по величине элемент в массиве.
          */
+
+        //Мой вариант
+//        int[] num = {10789, 2035, 1899, 1456, 2013};
+//        Arrays.sort(num);
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        System.out.println("The second largest element in the array: " + num[num.length-2]);
+
+        //Вариант 2
+//        int[] my_array = {
+//                10789, 2035, 1899, 1456, 2013,
+//                1458, 2458, 1254, 1472, 2365,
+//                1456, 2165, 1457, 2456};
+//        System.out.println("Original numeric array : "+Arrays.toString(my_array));
+//        Arrays.sort(my_array);
+//        int index = my_array.length-1;
+//        while(my_array[index]==my_array[my_array.length-1]){
+//            index--;
+//        }
+//        System.out.println("Second largest value: " + my_array[index]);
+
+        System.out.println("Exercise 18");
+
+        /*
+        Напишите программу на Java, чтобы найти второй наименьший элемент в массиве.
+         */
+
+        //Мой вариант
+//        int[] num = {10789, 2035, 1899, 1456, 2013, -1, -4};
+//        Arrays.sort(num);
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        System.out.println("The second smallest element in the array: " + num[1]);
+
+        //Вариант 2
+//        int[] my_array = {-1, 4, 0, 2, 7, -3};
+//        System.out.println("Original numeric array : "+Arrays.toString(my_array));
+//        int min = Integer.MAX_VALUE;
+//        int second_min = Integer.MAX_VALUE;
+//        for (int i = 0; i < my_array.length; i++) {
+//            if(my_array[i]==min){
+//                second_min=min;
+//            } else if (my_array[i] < min) {
+//                second_min = min;
+//                min = my_array[i];
+//            } else if (my_array[i] < second_min) {
+//                second_min = my_array[i];
+//            }
+//        }
+//        System.out.println("Second lowest number is : " + second_min);
+
+        System.out.println("Exercise 19");
+
+        /*
+        Напишите программу на Java, чтобы добавить две матрицы одинакового размера.
+         */
+
+//        int m, n, c, d;
+//        Scanner in = new Scanner(System.in);
+//
+//        System.out.println("Input number of rows of matrix");
+//        m = in.nextInt();
+//        System.out.println("Input number of columns of matrix");
+//        n  = in.nextInt();
+//
+//        int array1[][] = new int[m][n];
+//        int array2[][] = new int[m][n];
+//        int sum[][] = new int[m][n];
+//
+//        System.out.println("Input elements of first matrix");
+//
+//        for (  c = 0 ; c < m ; c++ )
+//            for ( d = 0 ; d < n ; d++ )
+//                array1[c][d] = in.nextInt();
+//
+//        System.out.println("Input the elements of second matrix");
+//
+//        for ( c = 0 ; c < m ; c++ )
+//            for ( d = 0 ; d < n ; d++ )
+//                array2[c][d] = in.nextInt();
+//
+//        for ( c = 0 ; c < m ; c++ )
+//            for ( d = 0 ; d < n ; d++ )
+//                sum[c][d] = array1[c][d] + array2[c][d];
+//
+//        System.out.println("Sum of the matrices:-");
+//
+//        for ( c = 0 ; c < m ; c++ )
+//        {
+//            for ( d = 0 ; d < n ; d++ )
+//                System.out.print(sum[c][d]+"\t");
+//
+//            System.out.println();
+//        }
+
+        System.out.println("Exercise 20");
+
+        /*
+        Напишите программу на Java для преобразования массива в ArrayList.
+         */
+
+        //Мой вариант
+//        String[] str = {"Python", "JAVA", "PHP", "Perl", "C#", "C++"};
+//        System.out.println("A regular array: " + Arrays.toString(str));
+//
+//        ArrayList<String> newstr = new ArrayList<>(Arrays.asList(str));
+//        System.out.println("Dynamic array: " + newstr);
+
+        //Вариант 2
+//        String[]  my_array = new String[] {"Python", "JAVA", "PHP",  "Perl", "C#", "C++"};
+//        ArrayList<String>  list = new ArrayList<String>(Arrays.asList(my_array));
+//
+//        System.out.println(list);
+
+        System.out.println("Exercise 21");
+
+        /*
+        Напишите программу на Java для преобразования ArrayList в массив.
+         */
+
+        //Мой вариант
+//        ArrayList<String> str = new ArrayList<>(Arrays.asList("Python", "JAVA", "PHP", "Perl", "C#", "C++"));
+//        System.out.println("Dynamic array: " + str);
+//
+//        String[] newstr = str.toArray(new String[str.size()]);
+//        System.out.println("A regular array: " + Arrays.toString(newstr));
+
+        //Вариант 2
+//        ArrayList<String> list = new ArrayList<String>();
+//        list.add("Python");
+//
+//        list.add("Java");
+//
+//        list.add("PHP");
+//
+//        list.add("C#");
+//
+//        list.add("C++");
+//
+//        list.add("Perl");
+//
+//        String[]  my_array = new String[list.size()];
+//
+//        list.toArray(my_array);
+//
+//        for (String  string : my_array)
+//        {
+//            System.out.println(string);
+//        }
     }
 //    public static boolean contains(int[] arr, int item) {
 //        for (int n : arr) {
