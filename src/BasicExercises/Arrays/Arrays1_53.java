@@ -642,6 +642,740 @@ public class Arrays1_53 {
 //        {
 //            System.out.println(string);
 //        }
+
+        System.out.println("Exercise 22");
+
+        /*
+        Напишите программу на Java, чтобы найти все пары элементов в массиве, сумма которых равна указанному числу.
+         */
+
+        //Мой вариант
+//        int[] num = {2, 7, 4, -5, 11, 5, 20};
+//        System.out.println("Array: " + Arrays.toString(num));
+//
+//        int n = 15;
+//
+//        System.out.println("Pairs of elements and their sum: ");
+//        for (int i = 0; i < num.length; i++) {
+//            for (int k = 0+i; k < num.length; k++) {
+//                if (num[i] + num[k] == n)
+//                    System.out.println(num[i] + " + " + num[k] + " = " + n);
+//            }
+//        }
+
+        //Вариант 2
+//        pairs_value(new int[] {2, 7, 4, -5, 11, 5, 20}, 15);
+//
+//        pairs_value(new int[] {14, -15, 9, 16, 25, 45, 12, 8}, 30);
+
+        System.out.println("Exercise 23");
+
+        /*
+        Напишите программу на Java, чтобы проверить равенство двух массивов.
+         */
+
+        //Мой вариант
+//        int[] num1 = {2, 7, 4, -5, 11, 5, 20};
+//        int[] num2 = {2, 7, 4, -5, 11, 5, 20};
+//        System.out.println("Array 1: " + Arrays.toString(num1));
+//        System.out.println("Array 2: " + Arrays.toString(num2));
+//
+//        if (Arrays.equals(num1, num2)) {
+//            System.out.println("Arrays are equal");
+//        } else {
+//            System.out.println("Arrays are different");
+//        }
+
+        //Вариант 2
+//        int[] array1 =  {2, 5, 7, 9, 11};
+//        int[] array2 =  {2, 5, 7, 8, 11};
+//        int[] array3 =  {2, 5, 7, 9, 11};
+//
+//        equality_checking_two_arrays(array1,  array2);
+//        equality_checking_two_arrays(array1, array3);
+
+        System.out.println("Exercise 24");
+
+        /*
+        Напишите программу на Java, чтобы найти пропущенное число в массиве.
+         */
+
+        //Мой вариант
+//        int n = 0;
+//
+//        int[] num = {1, 2, 3, 4, 6, 7, 8};
+//        System.out.println("Array: " + Arrays.toString(num));
+//
+//        for (int i = 0; i < num.length; i++) {
+//            n++;
+//            if (num[i] != n) {
+//                System.out.println("Missing number: " + n);
+//                n++;
+//            }
+//        }
+
+        //Вариант 2
+//        int total_num;
+//        int[] numbers = new int[]{1,2,3,4,6,7};
+//        total_num = 7;
+//        int expected_num_sum = total_num * ((total_num + 1) / 2);
+//        int num_sum = 0;
+//        for (int i: numbers) {
+//            num_sum += i;
+//        }
+//        System.out.print( expected_num_sum - num_sum);
+//        System.out.print("\n");
+
+        System.out.println("Exercise 25");
+
+        /*
+        Напишите программу на Java, чтобы найти общие элементы из трех отсортированных (в порядке убывания) массивов.
+         */
+
+        //Мой вариант
+//        int[] num1 = {2, 4, 8};
+//        int[] num2 = {2, 3, 4, 8, 10, 16};
+//        int[] num3 = {4, 8, 14, 40};
+//        System.out.println("Array 1: " + Arrays.toString(num1));
+//        System.out.println("Array 2: " + Arrays.toString(num2));
+//        System.out.println("Array 3: " + Arrays.toString(num3));
+//
+//        ArrayList<Integer> newList = new ArrayList<> ();
+//
+//        System.out.println("Identical elements in three arrays: ");
+//        for (int i = 0; i < num1.length; i++) {
+//            for (int k = 0; k < num2.length; k++) {
+//                for (int g = 0; g < num3.length; g++) {
+//                    if (num1[i] == num2[k] && num2[k] == num3[g]) {
+//                        newList.add(num3[g]);
+//                        // System.out.println(num3[g]);
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println(newList);
+
+        //Вариант 2
+//        ArrayList<Integer> common = new ArrayList<Integer>();
+//        int array1[] = {2, 4, 8};
+//        int array2[] = {2, 3, 4, 8, 10, 16};
+//        int array3[] = {4, 8, 14, 40};
+//        int x = 0, y = 0, z = 0;
+//        while (x < array1.length && y < array2.length && z < array3.length){
+//            if (array1[x] == array2[y] && array2[y] == array3[z]){
+//                common.add(array1[x]);
+//                x++;
+//                y++;
+//                z++;
+//            }
+//            else if (array1[x] < array2[y])
+//                x++;
+//            else if (array2[y] < array3[z])
+//                y++;
+//            else
+//                z++;
+//        }
+//        System.out.println("Common elements from three sorted (in non-decreasing order) arrays: ");
+//        System.out.println(common);
+
+        System.out.println("Exercise 26");
+
+        /*
+        Напишите программу на Java, чтобы переместить все 0 в конец массива. Поддерживать относительный порядок
+        других (ненулевых) элементов массива.
+         */
+
+        //Мой вариант
+//        int[] num = {0, 0, 1, 0, 3, 0, 5, 0, 6};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        reorder(num);
+//        System.out.println("Sorted array: " + Arrays.toString(num));
+
+        //Вариант 2
+//        int[] array_nums = {0,0,1,0,3,0,5,0,6};
+//        int i = 0;
+//        System.out.print("\nOriginal array: \n");
+//        for (int n : array_nums)
+//            System.out.print(n+"  ");
+//
+//        for(int j = 0, l = array_nums.length; j < l;) {
+//            if(array_nums[j] == 0)
+//                j++;
+//            else {
+//                int temp = array_nums[i];
+//                array_nums[i] = array_nums[j];
+//                array_nums[j] = temp;
+//                i ++;
+//                j ++;
+//            }
+//        }
+//        while (i < array_nums.length)
+//            array_nums[i++] = 0;
+//        System.out.print("\nAfter moving 0's to the end of the array: \n");
+//        for (int n : array_nums)
+//            System.out.print(n+"  ");
+//        System.out.print("\n");
+
+        System.out.println("Exercise 27");
+
+        /*
+        Напишите программу на Java, чтобы найти количество четных и нечетных целых чисел в данном массиве целых чисел.
+         */
+
+        //Мой вариант
+//        int even = 0;
+//        int odd = 0;
+//
+//        int[] num = {5, 7, 2, 4, 9};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//
+//        for (int i : num) {
+//            if (i%2 == 0) {
+//                even++;
+//            } else {
+//                odd++;
+//            }
+//        }
+//
+//        System.out.println("Even elements: " + even);
+//        System.out.println("Odd elements: " + odd);
+
+        //Вариант 2
+//        int[] array_nums = {5, 7, 2, 4, 9};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        int ctr = 0;
+//        for(int i = 0; i < array_nums.length; i++)
+//        {
+//            if(array_nums[i] % 2 == 0)
+//                ctr++;
+//        }
+//        System.out.println("Number of even numbers : "+ctr);
+//        System.out.println("Number of odd numbers  : "+(array_nums.length-ctr));
+
+        System.out.println("Exercise 28");
+
+        /*
+        Напишите программу на Java, чтобы получить разницу между самым большим и самым маленьким значениями
+        в массиве целых чисел. Длина массива должна быть от 1 и выше.
+         */
+
+        //Мой вариант
+//        ArrayList<Integer> num = new ArrayList<Integer>(Arrays.asList(5, 7, 2, 4, 9));
+//        System.out.println("The original array: " + num);
+//        System.out.println("Difference between max and min values: " + (Collections.max(num) - Collections.min(num)));
+
+        //Вариант 2
+//        int[] array_nums = {5, 7, 2, 4, 9};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        int max_val = array_nums[0];
+//        int min = array_nums[0];
+//        for(int i = 1; i < array_nums.length; i++)
+//        {
+//            if(array_nums[i] > max_val)
+//                max_val = array_nums[i];
+//            else if(array_nums[i] < min)
+//                min = array_nums[i];
+//        }
+//        System.out.println("Difference between the largest and smallest values of the said array: "+(max_val-min));
+
+        System.out.println("Exercise 29");
+
+        /*
+        Напишите программу на Java для вычисления среднего значения массива целых чисел, за исключением
+        самых больших и самых маленьких значений.
+         */
+
+        //Мой вариант
+//        int[] num = {5, 7, 2, 4, 9};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//
+//        int max = num[0];
+//        int min = num[0];
+//        float sum = 0;
+//
+//        for (int i : num) {
+//            sum += i;
+//        }
+//
+//        for (int i = 1; i < num.length; i++) {
+//            if(num[i] > max) {
+//                max = num[i];
+//            } else if(num[i] < min) {
+//                min = num[i];
+//            }
+//        }
+//        float average = ((sum - (max + min)) / (num.length - 2));
+//        System.out.printf("The average value of an array of integers, with the exception of max and max values: %.2f", average);
+
+        //Вариант 2
+//        int[] array_nums = {5, 7, 2, 4, 9};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        int max = array_nums[0];
+//        int min = array_nums[0];
+//        float sum = array_nums[0];
+//        for(int i = 1; i < array_nums.length; i++)
+//        {
+//            sum  += array_nums[i];
+//            if(array_nums[i] > max)
+//                max = array_nums[i];
+//            else if(array_nums[i] < min)
+//                min = array_nums[i];
+//        }
+//        float x = ((sum-max-min) / (array_nums.length - 2));
+//        System.out.printf("Compute the average value of an array of integers except the largest and smallest values: %.2f",x);
+//        System.out.print("\n");
+
+        System.out.println("Exercise 30");
+
+        /*
+        Напишите программу на Java, чтобы проверить, является ли массив целых чисел без 0 и -1.
+         */
+
+        //Мой вариант
+//        int[] num = {50, 77, 12, 54, -11};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        System.out.println("Array without 0 and -1: " + check(num));
+
+        //Вариант 2
+//        int[] array_nums = {50, 77, 12, 54, -11};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        System.out.println("Result: "+test(array_nums));
+
+        System.out.println("Exercise 31");
+
+        /*
+        Напишите программу на Java, чтобы проверить, равна ли сумма всех десятичных чисел в массиве 30.
+        Возвращаемое значение false, если условие не удовлетворяет, иначе true.
+         */
+
+        //Мой вариант
+//        int[] num = {10, 77, 10, 54, -11, 10};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        System.out.println("The sum of all decimal numbers in the array is 30: " + sumNum(num));
+
+        //Вариант 2
+//        int[] array_nums = {10, 77, 10, 54, -11, 10};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        int search_num = 10;
+//        int fixed_sum = 30;
+//
+//        System.out.println("Result: "+result(array_nums, search_num, fixed_sum));
+
+        System.out.println("Exercise 32");
+
+        /*
+        Напишите программу на Java, чтобы проверить, содержит ли массив целых чисел два указанных элемента 65 и 77.
+         */
+
+        //Мой вариант
+//        int[] num = {77, 77, 65, 65, 65, 77};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        int check65 = 0;
+//        int check77 = 0;
+//        System.out.println("Does the array of integers contain the two specified elements 65 and 77: " + checkNum(num, check65, check77));
+
+        //Вариант 2
+//        int[] array_nums = {77, 77, 65, 65, 65, 77};
+//        System.out.println("Original Array: "+Arrays.toString(array_nums));
+//        int num1 = 77;
+//        int num2 = 65;
+//
+//        System.out.println("Result: "+result(array_nums, num1, num2));
+
+        System.out.println("Exercise 33");
+
+        /*
+        Напишите Java-программу для удаления дублирующих элементов данного массива и возврата новой длины массива.
+        Образец массива: [20, 20, 30, 40, 50, 50, 50]
+        После удаления дублирующих элементов программа должна вернуть 4 в качестве новой длины массива.
+         */
+
+        //Мой вариант
+//        int[] num = {20, 20, 30, 40, 50, 50, 50};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        System.out.println("Long: " + num.length);
+//        int[] newArr = removeDuplicate(num);
+//        System.out.println("Array without duplicates: " + Arrays.toString(newArr));
+//        System.out.println("Long: " + newArr.length);
+
+        //Вариант 2
+//        int nums[] = {20, 20, 30, 40, 50, 50, 50};
+//        System.out.println("Original array length: "+nums.length);
+//        System.out.print("Array elements are: ");
+//        for (int i = 0; i < nums.length; i++)
+//        {
+//            System.out.print(nums[i]+" ");
+//        }
+//        System.out.println("\nThe new length of the array is: "+array_sort(nums));
+
+        System.out.println("Exercise 34");
+
+        /*
+        Напишите программу на Java, чтобы найти длину самой длинной последовательной последовательности элементов
+        из заданного несортированного массива целых чисел.
+        Образец массива: [49, 1, 3, 200, 2, 4, 70, 5]
+        Самая длинная последовательность последовательных элементов - это [1, 2, 3, 4, 5], поэтому программа вернет ее длину 5.
+         */
+
+        //Вариант 2
+//        int nums[] = {49, 1, 3, 200, 2, 4, 70, 5};
+//        System.out.println("Original array length: "+nums.length);
+//        System.out.print("Array elements are: ");
+//        for (int i = 0; i < nums.length; i++)
+//        {
+//            System.out.print(nums[i]+" ");
+//        }
+//        System.out.println("\nThe new length of the array is: "+longest_sequence(nums));
+
+        System.out.println("Exercise 35");
+
+        /*
+        Напишите программу на Java, чтобы найти сумму двух элементов данного массива, которая равна заданному целому числу.
+        Образец массива: [1,2,4,5,6]
+        Целевое значение: 6.
+         */
+
+        //Мой вариант
+//        int[] num = {1, 2, 4, 5, 6};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        int n = 6;
+//
+//        for (int i = 0; i < num.length; i++) {
+//            for (int k = 0+i; k < num.length; k++) {
+//                if (num[i] + num[k] == n) {
+//                    System.out.println(num[i] + " + " + num[k] + " = " + n);
+//                }
+//            }
+//        }
+
+        //Вариант 2
+//        ArrayList<Integer> my_array = new ArrayList<Integer>();
+//        my_array.add(1);
+//        my_array.add(2);
+//        my_array.add(4);
+//        my_array.add(5);
+//        my_array.add(6);
+//        int target = 6;
+//        ArrayList<Integer> result = two_sum_array_target(my_array, target);
+//        for(int i : result)
+//            System.out.print("Index: "+i + " ");
+
+        System.out.println("Exercise 36");
+
+        /*
+        Напишите программу на Java, чтобы найти все уникальные триплеты, в которых сумма всех трех элементов [x, y, z (x ≤ y ≤ z)] равна указанному числу.
+        Пример массива: [1, -2, 0, 5, -1, -4]
+        Целевое значение: 2.
+         */
+
+        //Мой вариант
+//        int[] num = {1, -2, 0, 5, -1, -4};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        int n = 2;
+//
+//        System.out.println("Unique triplets with sum n: ");
+//        for (int i = 0; i < num.length; i++) {
+//            for (int k = 0+i; k < num.length; k++) {
+//                for (int g = 0+k; g < num.length; g++) {
+//                    if ((num[i] + num[k] + num[g]) == n) {
+//                        System.out.println(num[i] + " + " + num[k] + " + " + num[g] + " = " + n);
+//                    }
+//                }
+//            }
+//        }
+
+        //Вариант 2
+//        int[] input = {1, -2, 0, 5, -1, -4};
+//        int target = 2;
+//        Arrays1_53 r = new Arrays1_53();
+//        System.out.println(r.threeSum(input,target));
+
+        System.out.println("Exercise 37");
+
+        /*
+        Напишите Java-программу для создания массива ее антидиагоналей из заданной квадратной матрицы.
+
+        Пример:
+        Вход:
+        1 2
+        3 4
+        Выход:
+        [
+        [1],
+        [2, 3],
+        [4]
+        ]
+        Входные данные:
+        [10, 20, 30]
+        [50, 60, 70]
+        [90, 100, 110]
+        Выход:
+        [10]
+        [20, 50]
+        [30, 60, 90]
+        [70, 100]
+        [110]
+         */
+
+        //Вариант 2
+//        ArrayList<ArrayList<Integer>> A = new ArrayList<ArrayList<Integer>>();
+//        ArrayList<Integer> temp = new ArrayList<Integer>();
+//        temp.add(10);
+//        temp.add(20);
+//        temp.add(30);
+//        A.add(new ArrayList<Integer>(temp));
+//        temp.clear();
+//
+//        temp.add(50);
+//        temp.add(60);
+//        temp.add(70);
+//        A.add(new ArrayList<Integer>(temp));
+//        temp.clear();
+//
+//        temp.add(90);
+//        temp.add(100);
+//        temp.add(110);
+//        A.add(new ArrayList<Integer>(temp));
+//        temp.clear();
+//        for(ArrayList<Integer> t : A)
+//            System.out.println(t);
+//
+//        ArrayList<ArrayList<Integer>> result  = diagonalEfficient(A);
+//        for(ArrayList<Integer> t : result)
+//            System.out.println(t);
+
+        System.out.println("Exercise 38");
+
+        /*
+        Напишите программу на Java, чтобы получить элемент контрольного числа из заданного массива целых чисел, содержащих дубликаты.
+
+        Элемент большинства: элемент большинства - это элемент, который появляется более чем в n / 2 раза, где n - размер массива.
+         */
+
+        //Мой вариант
+//        int[] num = {5, 2, 7, 7, 7};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        int n = num.length;
+//
+//        findMajority(num, n);
+
+        //Вариант 2
+//        // Array - test majority element
+//        int nums[] = { 1, 6, 6, 5, 7, 4, 1, 7, 7, 7, 7, 7, 7, 7, 2 };
+//        System.out.println("Original Array : "+Arrays.toString(nums));
+//        int result = MajorityElement(nums);
+//        if (result != -1)
+//            System.out.println("Majority element is " + result);
+//        else
+//            System.out.println("Majority element does not exist");
+
+        System.out.println("Exercise 39");
+
+        /*
+        Напишите Java-программу для печати всех ЛИДЕРОВ в массиве.
+
+        Примечание. Элемент является лидером, если он больше всех элементов с правой стороны.
+         */
+
+        //Мой вариант
+//        int[] num = {10, 9, 14, 23, 15, 0, 9};
+//        System.out.println("Original Array: " + Arrays.toString(num));
+//
+//        for(int i = 0; i < num.length; i++) {
+//            int j;
+//            for(j = i+1; j < num.length; j++) {
+//                if (num[i] <= num[j]) {
+//                    break;
+//                }
+//            }
+//            if (j == num.length) {
+//                System.out.print(num[i] + " ");
+//            }
+//        }
+
+        //Вариант 2
+//        int arr[] = {10, 9, 14, 23, 15, 0, 9};
+//        int size = arr.length;
+//        for (int i = 0; i < size; i++)
+//        {
+//            int j;
+//            for (j = i + 1; j < size; j++)
+//            {
+//                if (arr[i] <= arr[j])
+//                    break;
+//            }
+//            if (j == size)
+//                System.out.print(arr[i] + " ");
+//        }
+
+        System.out.println("Exercise 40");
+
+        /*
+        Напишите программу на Java, чтобы найти два элемента из заданного массива положительных
+        и отрицательных чисел, чтобы их сумма была ближе всего к нулю.
+         */
+
+        //Вариант 2
+//        int arr[] = {1, 5, -4, 7, 8, -6};
+//        int size = arr.length;
+//        int l, r, min_sum, sum, min_l_num, min_r_num;
+//
+//        if(size < 2)
+//        {
+//            System.out.println("Invalid Input");
+//            return;
+//        }
+//
+//        min_l_num = 0;
+//        min_r_num = 1;
+//        min_sum = arr[0] + arr[1];
+//
+//        for(l = 0; l < size - 1; l++)
+//        {
+//            for(r = l+1; r < size; r++)
+//            {
+//                sum = arr[l] + arr[r];
+//                if(Math.abs(min_sum) > Math.abs(sum))
+//                {
+//                    min_sum = sum;
+//                    min_l_num = l;
+//                    min_r_num = r;
+//                }
+//            }
+//        }
+//
+//        System.out.println("Two elements whose sum is minimum are "+
+//                arr[min_l_num]+ " and "+arr[min_r_num]);
+
+        System.out.println("Exercise 41");
+
+        /*
+        Напишите программу на Java, чтобы найти самые маленькие и вторые самые маленькие элементы данного массива.
+         */
+
+        //Вариант 2
+//        int arr[] = {5, 7, -8, 5, 14, 1};
+//
+//        int first_element, second_element, arr_size = arr.length;
+//
+//        /* Return if the array size less than two */
+//        if (arr_size < 2)
+//        {
+//            System.out.println("Array size less than two.");
+//            return;
+//        }
+//
+//        first_element = second_element = Integer.MAX_VALUE;
+//        for (int i = 0; i < arr_size ; i ++)
+//        {
+//            /* Update both first and second if current element is smaller than first. */
+//            if (arr[i] < first_element)
+//            {
+//                second_element = first_element;
+//                first_element = arr[i];
+//            }
+//
+//            /* Update second if arr[i] is between first and second
+//               elements.*/
+//            else if (arr[i] < second_element && arr[i] != first_element)
+//                second_element = arr[i];
+//        }
+//        if (second_element == Integer.MAX_VALUE)
+//            System.out.println("No second smallest element.");
+//        else
+//            System.out.println("The smallest element is " +
+//                    first_element + " and second Smallest  element is " + second_element +".");
+
+        System.out.println("Exercise 42");
+
+        /*
+        Напишите Java-программу для разделения всех нулей на левой стороне и всех единиц
+        на правой стороне заданного массива нулей и единиц.
+         */
+
+        //Мой вариант
+        //Решение в упражнении 26
+
+        //Вариант 2
+//        int nums[] = {0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1};
+//        int i,  nums_size = nums.length;
+//        int left = 0, right = nums_size - 1;
+//
+//        System.out.println("Original Array : "+Arrays.toString(nums));
+//
+//        while (left < right)
+//        {
+//            /* While  0 at left increment left index  */
+//            while (nums[left] == 0 && left < right)
+//                left++;
+//
+//            /* While we see 1 at right decrement right index*/
+//            while (nums[right] == 1 && left < right)
+//                right--;
+//
+//
+//            if (left < right)
+//            {
+//                nums[left] = 0;
+//                nums[right] = 1;
+//                left++;
+//                right--;
+//            }
+//        }
+//
+//        System.out.println("Array after segregation is : "+Arrays.toString(nums));
+
+        System.out.println("Exercise 43");
+
+        /*
+        Напишите программу на Java, чтобы найти все комбинации из четырех элементов данного массива,
+        сумма которых равна заданному значению.
+         */
+
+        //Мой вариант
+//        int[] num = {10, 20, 30, 40, 1, 2};
+//        System.out.println("The original array: " + Arrays.toString(num));
+//        int n = 53;
+//
+//        for(int i = 0; i < num.length; i++) {
+//            for(int j = i+1; j < num.length; j++) {
+//                for(int k = j+1; k < num.length; k++) {
+//                    for(int q = k+1; q < num.length; q++) {
+//                        if (num[i] + num[j] + num[k] + num[q] == n) {
+//                            System.out.println(num[i] + " + " + num[j] + " + " + num[k] + " + " + num[q] + " = " + n);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+        //Вариант 2
+
+//        int nums[] = {10, 20, 30, 40, 1, 2};
+//        int n = nums.length;
+//        // given value
+//        int s = 53;
+//        System.out.println("Given value: "+s);
+//        System.out.print("Combination of four elements:");
+//        // Find other three elements after fixing first element
+//        for (int i = 0; i < n - 3; i++)
+//        {
+//            // Find other two elements after fixing second element
+//            for (int j = i + 1; j < n - 2; j++)
+//            {
+//                // Find the fourth element after fixing third element
+//                for (int k = j + 1; k < n - 1; k++)
+//                {
+//                    // find the fourth
+//                    for (int l = k + 1; l < n; l++)
+//                    {
+//                        if (nums[i] + nums[j] + nums[k] + nums[l] == s)
+//                            System.out.print("\n"+nums[i]+" "+nums[j]+" "+nums[k]
+//                                    +" "+nums[l]);
+//                    }
+//                }
+//            }
+//        }
     }
 //    public static boolean contains(int[] arr, int item) {
 //        for (int n : arr) {
@@ -774,5 +1508,360 @@ public class Arrays1_53 {
 //            }
 //        }
 //        return newNumarr;
+//    }
+
+    //Упражнение 22
+//    static void  pairs_value(int inputArray[], int inputNumber)
+//    {
+//        System.out.println("Pairs of elements and their sum : ");
+//
+//        for (int i =  0; i < inputArray.length; i++)
+//        {
+//            for (int j  = i+1; j < inputArray.length; j++)
+//            {
+//                if(inputArray[i]+inputArray[j] == inputNumber)
+//                {
+//                    System.out.println(inputArray[i]+" + "+inputArray[j]+" =  "+inputNumber);
+//                }
+//            }
+//        }
+//    }
+
+    //Упражнение 23
+//    static void  equality_checking_two_arrays(int[] my_array1, int[] my_array2)
+//    {
+//        boolean  equalOrNot = true;
+//
+//        if(my_array1.length == my_array2.length)
+//        {
+//            for (int i  = 0; i < my_array1.length; i++)
+//            {
+//                if(my_array1[i] != my_array2[i])
+//                {
+//                    equalOrNot = false;
+//                }
+//            }
+//        }
+//        else
+//        {
+//            equalOrNot  = false;
+//        }
+//
+//        if  (equalOrNot)
+//        {
+//            System.out.println("Two arrays are equal.");
+//        }
+//        else
+//        {
+//            System.out.println("Two  arrays are not equal.");
+//        }
+//    }
+
+    //Упражнение 26
+    // Метод для перемещения всех нулей, присутствующих в массиве, в конец
+//    public static void reorder (int[] num) {
+//        // `k` сохраняет индекс следующей доступной позиции
+//        int k = 0;
+//        // делаем для каждого элемента
+//        for (int i : num) {
+//            // если текущий элемент отличен от нуля, поместить элемент в
+//            // следующая свободная позиция в массиве
+//            if (i != 0) {
+//                num[k++] = i;
+//            }
+//        }
+//        // перемещаем все 0 в конец массива (оставшиеся индексы)
+//        for (int i = k; i < num.length; i++) {
+//            num[i] = 0;
+//        }
+//    }
+
+    //Упражнение 30
+//    public static boolean check (int[] num) {
+//        for(int i : num) {
+//            if (i == 0 || i == -1) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+//    public static boolean test(int[] numbers) {
+//        for (int number : numbers) {
+//            if (number == 0 || number == -1) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+    //Упражнение 31
+//    public static boolean sumNum(int[] num) {
+//        int n = 0;
+//        for (int i : num) {
+//            if (i == 10) {
+//                n++;
+//                if (n == 3) {
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+
+//    public static boolean result(int[] numbers, int search_num, int fixed_sum) {
+//        int temp_sum = 0;
+//        for (int number : numbers) {
+//            if (number == search_num) {
+//                temp_sum += search_num;
+//            }
+//            if (temp_sum > fixed_sum) {
+//                break;
+//            }
+//        }
+//        return temp_sum == fixed_sum;
+//    }
+
+    //Упражнение 32
+//    public static boolean checkNum(int[] num, int check65, int check77) {
+//        for (int i : num) {
+//            if (i == 65) {
+//                check65++;
+//            } else if (i == 77) {
+//                check77++;
+//            }
+//        }
+//        System.out.println("Values 65: " + check65);
+//        System.out.println("Values 77: " + check77);
+//        if (check65 >= 1 && check77 >= 1) {
+//            return true;
+//        }
+//        return false;
+//    }
+
+//    public static boolean result(int[] array_nums, int num1, int num2) {
+//        for (int number : array_nums) {
+//            boolean r = number != num1 && number != num2;
+//            if (r) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+    //Упражнение 33
+//    public static int[] removeDuplicate (int[] num) {
+//        int k = 0;
+//        for (int i = 0; i < num.length; i++) {
+//            if (i == 0 || num[i] != num[i - 1]) {
+//                num[k++] = num[i];
+//            }
+//        }
+//        return Arrays.copyOf(num, k);
+//    }
+
+//    public static int array_sort(int[] nums) {
+//        int index = 1;
+//        for (int i = 1; i < nums.length; i++) {
+//            if (nums[i] != nums[index-1])
+//                nums[index++] = nums[i];
+//        }
+//        return index;
+//    }
+
+    //Упражнение 34
+//    public static int longest_sequence(int[] nums) {
+//        final HashSet<Integer> h_set = new HashSet<Integer>();
+//        for (int i : nums) h_set.add(i);
+//        int longest_sequence_len = 0;
+//        for (int i : nums) {
+//            int length = 1;
+//            for (int j = i - 1; h_set.contains(j); --j) {
+//                h_set.remove(j);
+//                ++length;
+//            }
+//            for (int j = i + 1; h_set.contains(j); ++j) {
+//                h_set.remove(j);
+//                ++length;
+//            }
+//            longest_sequence_len = Math.max(longest_sequence_len, length);
+//        }
+//        return longest_sequence_len;
+//    }
+
+    //Упражнение 35
+//    public static ArrayList<Integer> two_sum_array_target(final List<Integer> a, int b) {
+//
+//        HashMap<Integer, Integer> my_map = new HashMap<Integer, Integer>();
+//        ArrayList<Integer> result = new ArrayList<Integer>();
+//        result.add(0);
+//        result.add(1);
+//        for(int i = 0; i < a.size(); i++){
+//            if(my_map.containsKey(a.get(i))){
+//                int index = my_map.get(a.get(i));
+//                result.set(0, index );
+//                result.set(1, i );
+//                break;
+//            }
+//            else{
+//                my_map.put(b - a.get(i), i);
+//            }
+//        }
+//
+//        return result;
+//    }
+
+    //Упражнение 36
+//    public List<List<Integer>> threeSum(int[] nums, int target) {
+//        List<List<Integer>> my_List = new ArrayList<List<Integer>>();
+//
+//        for(int i = 0; i < nums.length; i++){
+//            for(int j = i; j < nums.length ;j++){
+//                for(int k = j; k<nums.length;k++){
+//                    if ( i != j && j != k && i != k && (nums[i] + nums[j] + nums[k] == target)){
+//                        List<Integer> inner_List = new ArrayList<Integer>(3);
+//                        inner_List.add(nums[i]);
+//                        inner_List.add(nums[j]);
+//                        inner_List.add(nums[k]);
+//                        my_List.add(inner_List);
+//                    }
+//                }
+//            }
+//        }
+//        return my_List;
+//    }
+
+    //Упражнение 37
+//    public static ArrayList<ArrayList<Integer>> Exercise37(ArrayList<ArrayList<Integer>> A) {
+//        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+//        int m = A.size();
+//        int n = A.get(0).size();
+//        ArrayList<Integer> temp = new ArrayList<Integer>();
+//        temp.add(A.get(0).get(0));
+//        result.add(new ArrayList<Integer>(temp));
+//        int i = 0;
+//        while(i < m){
+//            System.out.printf("For i : %d \n", i );
+//            int j = i+1;
+//            while(j < n){
+//                int k = i;
+//                int l = j;
+//                temp.clear();
+//                System.out.printf("\t For j : %d \n", j );
+//                while(l >= 0 && k < m){
+//                    System.out.printf("\t \t For k : %d and l : %d  add \n", k, l, A.get(k).get(l) );
+//                    temp.add(A.get(k).get(l));
+//                    k++;
+//                    l--;
+//                }
+//                System.out.println("\t \t Temp : " + temp);
+//
+//                result.add(new ArrayList<Integer>(temp));
+//                j++;
+//            }
+//
+//
+//            i++;
+//        }
+//        temp.clear();
+//        temp.add(A.get(m-1).get(n-1));
+//        result.add(new ArrayList<Integer>(temp));
+//        return result;
+//    }
+//    public static ArrayList<ArrayList<Integer>> diagonalEfficient(ArrayList<ArrayList<Integer>> A) {
+//        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+//        int m = A.size();
+//        int n = A.get(0).size();
+//        ArrayList<Integer> temp = new ArrayList<Integer>();
+//        temp.add(A.get(0).get(0));
+//        result.add(new ArrayList<Integer>(temp));
+//
+//
+//        int j;
+//        int i = 0;
+//        j = i+1;
+//        while(j < n){
+//            int k = i;
+//            int l = j;
+//            temp.clear();
+//            while(k < m && l >= 0){
+//                temp.add(A.get(k).get(l));
+//                k++;
+//                l--;
+//            }
+//            result.add(new ArrayList<Integer>(temp));
+//            j++;
+//        }
+//
+//        i = 1;
+//        j = n-1;
+//        while(i < m){
+//            int k = i;
+//            int l = j;
+//            temp.clear();
+//            while(k < m && l >= 0){
+//                temp.add(A.get(k).get(l));
+//                k++;
+//                l--;
+//            }
+//            result.add(new ArrayList<Integer>(temp));
+//            i++;
+//        }
+//
+//
+//
+//        temp.clear();
+//        return result;
+//    }
+
+    //Упражнение 38
+//    public static void findMajority (int[] num, int n) {
+//        int maxCount = 0;
+//        int index = -1;
+//
+//        for(int i = 0; i < n; i++) {
+//            int count = 0;
+//            for(int j = 0; j < n; j++) {
+//                if (num[i] == num[j]) {
+//                    count++;
+//                }
+//            }
+//            if (count > maxCount) {
+//                maxCount = count;
+//                index = i;
+//            }
+//        }
+//        if (maxCount > n/2) {
+//            System.out.println(num[index]);
+//        } else {
+//            System.out.println ("No Majority Element");
+//        }
+//    }
+
+//    public static int MajorityElement(int arra1[])
+//    {
+//        int n = arra1.length;
+//        // Hash Map
+//        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+//
+//        // Element's frequency in a map
+//        for (int i = 0; i < n; i++)
+//        {
+//            if (map.get(arra1[i]) == null)
+//                map.put(arra1[i], 0);
+//
+//            map.put(arra1[i], map.get(arra1[i]) + 1);
+//        }
+//        // Return the element if its count is more than n/2
+//        Iterator it = map.entrySet().iterator();
+//        while (it.hasNext())
+//        {
+//            Map.Entry pair = (Map.Entry)it.next();
+//            if ((int)pair.getValue() > n/2)
+//                return (int)pair.getKey();
+//            it.remove();
+//        }
+//        // no majority element
+//        return -1;
 //    }
 }
