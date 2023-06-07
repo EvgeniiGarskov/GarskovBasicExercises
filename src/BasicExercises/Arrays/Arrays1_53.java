@@ -1376,6 +1376,196 @@ public class Arrays1_53 {
 //                }
 //            }
 //        }
+
+        System.out.println("Exercise 44");
+
+        /*
+        Напишите программу на Java для подсчета количества возможных треугольников из заданного несортированного массива натуральных чисел.
+         */
+
+        //Вариант 2
+//        int nums[] = {6, 7, 9, 16, 25, 12, 30, 40};
+//        int n = nums.length;
+//        System.out.println("Original Array : "+Arrays.toString(nums));
+//        // Sort the array elements in non-decreasing order
+//        Arrays.sort(nums);
+//
+//        // Initialize count of triangles
+//        int ctr = 0;
+//
+//        for (int i = 0; i < n-2; ++i)
+//        {
+//            int x = i + 2;
+//
+//            for (int j = i+1; j < n; ++j)
+//            {
+//                while (x < n && nums[i] + nums[j] > nums[x])
+//                    ++x;
+//                ctr += x - j - 1;
+//            }
+//        }
+//        System.out.println("Total number of triangles:  " +ctr);
+
+        System.out.println("Exercise 45");
+
+        /*
+        Напишите Java-программу для циклического вращения заданного массива по часовой стрелке на единицу.
+         */
+
+        //Мой вариант
+//        int[] num = {10, 20, 30, 40, 1, 2};
+//        System.out.println("Original Array: " + Arrays.toString(num));
+//        //Указываем индекс, который будем перемещать
+//        int n = num.length-1;
+//        shiftToRight(num, n);
+//        }
+//        public static void shiftToRight (int[] num, int n) {
+//        int temp = num[n];
+//
+//        for(int i = n; i > 0; i--) {
+//            num[i] = num[i-1];
+//        }
+//        num[0] = temp;
+//
+//        System.out.println("Array after shifting to right by one : "+Arrays.toString(num));
+
+        //Вариант 2
+//        System.out.println("Original arraay:");
+//        System.out.println(Arrays.toString(arra));
+//
+//        rotate_array();
+//
+//        System.out.println("Rotated arraay:");
+//        System.out.println(Arrays.toString(arra));
+
+        System.out.println("Exercise 46");
+
+        /*
+        Напишите программу на Java, чтобы проверить, существует ли пара с указанной суммой заданного отсортированного и повернутого массива.
+         */
+
+//        int arr_int[] = {22, 25, 17, 18, 19, 20};
+//        int sum = 42;
+//        int n = arr_int.length;
+//
+//        if (sum_pair(arr_int, n, sum))
+//            System.out.print("Array has a pair of elements with sum 42.");
+//        else
+//            System.out.print("Array has no pair with sum 42.");
+
+        System.out.println("Exercise 47");
+
+        /*
+        Напишите программу на Java, чтобы найти число оборотов в данном повернутом отсортированном массиве целых чисел.
+         */
+
+//        int arr_int[] = {35, 32, 30, 14, 18, 21, 27};
+//        // int arr_int[] = {35, 32, 14, 18, 21, 27};
+//        // int arr_int[] = {35, 14, 18, 21, 27};
+//        int n = arr_int.length;
+//        System.out.println(count_rotations(arr_int, n));
+
+        System.out.println("Exercise 48");
+
+        /*
+        Напишите программу на Java, чтобы упорядочить элементы заданного массива целых чисел, где
+        все отрицательные целые числа появляются перед всеми положительными целыми числами.
+         */
+
+//        int[] nums = {-4, 8, 6, -5, 6, -2, 1, 2, 3, -11};
+//        System.out.println("Original Array: "+Arrays.toString(nums));
+//        sort_nums(nums);
+//        System.out.println("New Array: "+Arrays.toString(nums));
+
+        System.out.println("Exercise 49");
+
+        /*
+        Напишите программу на Java, чтобы упорядочить элементы заданного массива целых чисел, где
+        все положительные целые числа появляются перед всеми отрицательными целыми числами.
+         */
+
+//        int arra_nums[] = {-4, 8, 6, -5, 6, -2, 1, 2, 3, -11};
+//        System.out.println("Original array : "+Arrays.toString(arra_nums));
+//        int j,temp,arr_size;
+//        arr_size = 8;
+//        for (int i = 0; i <arr_size; i++){
+//            j = i;
+//
+//            //Shift positive numbers left, negative numbers right
+//
+//            while ((j > 0) && (arra_nums[j] >0) && (arra_nums[j-1] < 0)){
+//                temp = arra_nums[j];
+//                arra_nums[j] = arra_nums[j-1];
+//                arra_nums[j-1] = temp;
+//                j--;
+//            }
+//        }
+//        System.out.println("New array : "+Arrays.toString(arra_nums));
+
+        System.out.println("Exercise 50");
+
+        /*
+        Напишите Java-программу для сортировки массива натуральных чисел данного массива, в отсортированном массиве
+        значение первого элемента должно быть максимальным, второе значение должно быть минимальным значением,
+        третье должно быть вторым максимумом, четвертая секунда - вторым минимумом и т. Д. на.
+         */
+
+//        int nums[] = new int[]{10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+//        int result[];
+//
+//        System.out.println("Original Array ");
+//        System.out.println(Arrays.toString(nums));
+//
+//        result = rearrange(nums,nums.length);
+//
+//        System.out.println("New Array ");
+//        System.out.println(Arrays.toString(result));
+
+        System.out.println("Exercise 51");
+
+        /*
+        Напишите программу на Java, чтобы разделить 0 в левой части и 1 в правой части массива из 0 и 1 в случайном порядке.
+         */
+
+//        int arr[] = new int[]{ 0, 0, 1, 1, 0, 1, 1, 1,0 };
+//        int result[];
+//        System.out.println("Original Array ");
+//        System.out.println(Arrays.toString(arr));
+//        int n = arr.length;
+//
+//        result = separate_0_1(arr, n);
+//        System.out.println("New Array ");
+//        System.out.println(Arrays.toString(result));
+
+        System.out.println("Exercise 52");
+
+        /*
+        Напишите Java-программу для разделения четных и нечетных чисел заданного массива целых чисел.
+        Сначала ставьте все четные числа, а затем нечетные.
+         */
+
+//        int nums[] = {20, 12, 23, 17, 7, 8, 10, 2, 1, 0};
+//        int result[];
+//        System.out.println("Original Array ");
+//        System.out.println(Arrays.toString(nums));
+//        result = separate_odd_even(nums);
+//
+//        System.out.print("Array after separation ");
+//        System.out.println(Arrays.toString(result));
+
+        System.out.println("Exercise 53");
+
+        /*
+        Напишите программу на Java, чтобы заменить каждый элемент следующим наибольшим элементом (справа) в заданном массиве целых чисел.
+         */
+
+//        int nums[] = {45, 20, 100, 23, -5, 2, -6};
+//        int result[];
+//        System.out.println("Original Array ");
+//        System.out.println(Arrays.toString(nums));
+//        result = next_greatest_num(nums);
+//        System.out.println("The modified array:");
+//        System.out.println(Arrays.toString(result));
     }
 //    public static boolean contains(int[] arr, int item) {
 //        for (int n : arr) {
@@ -1863,5 +2053,175 @@ public class Arrays1_53 {
 //        }
 //        // no majority element
 //        return -1;
+//    }
+
+    //Упражнение 45
+//    static int arra[] = new int[]{10, 20, 30, 40, 50, 60};
+//
+//    static void rotate_array()
+//    {
+//        int a = arra[arra.length-1], i;
+//        for (i = arra.length-1; i > 0; i--)
+//            arra[i] = arra[i-1];
+//        arra[0] = a;
+//    }
+
+    //Упражнение 46
+//    static boolean sum_pair(int arr_int[],
+//                            int n, int x)
+//    {
+//        int k;
+//        for (k = 0; k < n - 1; k++)
+//            if (arr_int[k] > arr_int[k+1])
+//                break;
+//
+//        int l = (k + 1) % n;
+//
+//        int r = k;
+//
+//        while (l != r)
+//        {
+//            if (arr_int[l] + arr_int[r] == x)
+//                return true;
+//            if (arr_int[l] + arr_int[r] < x)
+//                l = (l + 1) % n;
+//
+//            else
+//                r = (n + r - 1) % n;
+//        }
+//        return false;
+//    }
+
+    //Упражнение 47
+//    static int count_rotations(int arr_int[], int n)
+//    {
+//        int min_val = arr_int[0], min_index = -1;
+//        for (int i = 0; i < n; i++)
+//        {
+//            if (min_val > arr_int[i])
+//            {
+//                min_val = arr_int[i];
+//                min_index = i;
+//            }
+//        }
+//        return min_index;
+//    }
+
+    //Упражнение 48
+//    public static void sort_nums(int[] nums) {
+//        int pos_num = 0;
+//        int neg_num = 0;
+//        int i, j;
+//        int max = Integer.MIN_VALUE;
+//        for (i = 0; i < nums.length; i++) {
+//            if (nums[i] < 0) neg_num++;
+//            else pos_num++;
+//            if (nums[i] > max) max = nums[i];
+//        }
+//        max++;
+//        if (neg_num == 0 || pos_num == 0) return;
+//        i = 0;
+//        j = 1;
+//        while (true) {
+//            while (i <= neg_num && nums[i] < 0) i++;
+//            while (j < nums.length && nums[j] >= 0) j++;
+//            if (i > neg_num || j >= nums.length) break;
+//            nums[i] += max * (i + 1);
+//            swap_nums(nums, i, j);
+//        }
+//        i = nums.length - 1;
+//        while (i >= neg_num) {
+//            int div = nums[i] / max;
+//            if (div == 0) i--;
+//            else {
+//                nums[i] %= max;
+//                swap_nums(nums, i, neg_num + div - 2);
+//            }
+//        }
+//    }
+//    private static void swap_nums(int[] nums, int i , int j){
+//        int t = nums[i];
+//        nums[i] = nums[j];
+//        nums[j] = t;
+//    }
+
+    //Упражнение 50
+//    static int[] rearrange(int[] new_arra, int n)
+//    {
+//        int temp[] = new int[n];
+//
+//        int small_num = 0, large_num = n-1;
+//        boolean flag = true;
+//
+//        for (int i=0; i < n; i++)
+//        {
+//            if (flag)
+//                temp[i] = new_arra[large_num--];
+//            else
+//                temp[i] = new_arra[small_num++];
+//
+//            flag = !flag;
+//        }
+//
+//        return temp;
+//    }
+
+    //Упражнение 51
+//    static int [] separate_0_1(int arr[], int n) {
+//        int count = 0;
+//
+//        for (int i = 0; i < n; i++) {
+//            if (arr[i] == 0)
+//                count++;
+//        }
+//
+//        for (int i = 0; i < count; i++)
+//            arr[i] = 0;
+//
+//        for (int i = count; i < n; i++)
+//            arr[i] = 1;
+//
+//        return arr;
+//    }
+
+    //Упражнение 52
+//    static int [] separate_odd_even(int arr[])
+//    {
+//        int left_side = 0, right_side = arr.length - 1;
+//        while (left_side < right_side)
+//        {
+//            while (arr[left_side]%2 == 0 && left_side < right_side)
+//                left_side++;
+//
+//            while (arr[right_side]%2 == 1 && left_side < right_side)
+//                right_side--;
+//
+//            if (left_side < right_side)
+//            {
+//                int temp = arr[left_side];
+//                arr[left_side] = arr[right_side];
+//                arr[right_side] = temp;
+//                left_side++;
+//                right_side--;
+//            }
+//        }
+//        return arr;
+//    }
+
+    //Упражнение 53
+//    static int [] next_greatest_num(int arr_nums[])
+//    {
+//        int size = arr_nums.length;
+//        int max_from_right_num =  arr_nums[size-1];
+//        arr_nums[size-1] = -1;
+//
+//        for (int i = size-2; i >= 0; i--)
+//        {
+//            int temp = arr_nums[i];
+//            arr_nums[i] = max_from_right_num;
+//            if(max_from_right_num < temp)
+//                max_from_right_num = temp;
+//        }
+//        return arr_nums;
 //    }
 }
