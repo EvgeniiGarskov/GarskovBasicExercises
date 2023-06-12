@@ -2,14 +2,12 @@ package BasicExercises.Date_calendar_and_time;
 
 import java.text.DateFormat;
 import java.text.DateFormatSymbols;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.util.*;
 
 public class Date_calendar_and_time1_37 {
 
@@ -654,7 +652,121 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 31");
 
         /*
-
+        Напишите программу на Java для вычисления разницы между двумя датами в часах, минутах, миллисекундах и наносекундах.
          */
+
+//        LocalDateTime dateTime = LocalDateTime.of(2016, 9, 16, 0, 0);
+//        LocalDateTime dateTime2 = LocalDateTime.now();
+//        int diffInNano = java.time.Duration.between(dateTime, dateTime2).getNano();
+//        long diffInSeconds = java.time.Duration.between(dateTime, dateTime2).getSeconds();
+//        long diffInMilli = java.time.Duration.between(dateTime, dateTime2).toMillis();
+//        long diffInMinutes = java.time.Duration.between(dateTime, dateTime2).toMinutes();
+//        long diffInHours = java.time.Duration.between(dateTime, dateTime2).toHours();
+//        System.out.printf("\nDifference is %d Hours, %d Minutes, %d Milli, %d Seconds and %d Nano\n\n",
+//                diffInHours, diffInMinutes, diffInMilli, diffInSeconds, diffInNano );
+
+        System.out.println("Exercise 32");
+
+        /*
+        Напишите Java-программу для вычисления вашего возраста.
+         */
+
+        //Мой вариант
+//        LocalDate date = LocalDate.of(1994, 10, 19);
+//        LocalDate now = LocalDate.now();
+//        Period period = Period.between(date, now);
+//        System.out.printf("\nMy age is %d years, %d months and %d days \n\n", period.getYears(), period.getMonths(), period.getDays());
+
+        //Вариант 2
+//        // date of birth
+//        LocalDate pdate = LocalDate.of(1989, 04, 11);
+//        // current date
+//        LocalDate now = LocalDate.now();
+//        // difference between current date and date of birth
+//        Period diff = Period.between(pdate, now);
+//
+//        System.out.printf("\nI am  %d years, %d months and %d days old.\n\n",
+//                diff.getYears(), diff.getMonths(), diff.getDays());
+
+        System.out.println("Exercise 33");
+
+        /*
+        Напишите Java-программу, чтобы получить следующую и предыдущую пятницы.
+         */
+
+//        LocalDate dt = LocalDate.now();
+//        System.out.println("\nNext Friday: "+dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)));
+//        System.out.println("Previous Friday: "+dt.with(TemporalAdjusters.previous(DayOfWeek.FRIDAY))+"\n");
+
+        System.out.println("Exercise 34");
+
+        /*
+        Напишите Java-программу, чтобы получить сегодняшнюю дату в полночь.
+         */
+
+//        Calendar cal = new GregorianCalendar();
+//        cal.set(Calendar.HOUR_OF_DAY, 0); //anything 0 - 23
+//        cal.set(Calendar.MINUTE, 0);
+//        cal.set(Calendar.SECOND, 0);
+//        System.out.println("\n"+cal.getTime()+"\n");
+
+        System.out.println("Exercise 35");
+
+        /*
+        Напишите Java-программу для извлечения даты и времени из строки даты.
+         */
+
+        //Мой вариант
+//        try {
+//            String string = "2016-05-01 13:38:08";
+//            System.out.println("Original string (that holds date value) : "+string);
+//            SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//            Date date = dateFormatter.parse(string);
+//            System.out.println("Converted Date value : " + date);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+
+        //Вариант 2
+//        try {
+//            String originalString = "2016-07-14 09:00:02";
+//            Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(originalString);
+//            String newstr = new SimpleDateFormat("MM/dd/yyyy, H:mm:ss").format(date);
+//            System.out.println("\n"+newstr+"\n");
+//        }
+//        catch (ParseException e) {
+//            //Handle exception here
+//            e.printStackTrace();
+//        }
+
+        System.out.println("Exercise 36");
+
+        /*
+        Напишите Java-программу для преобразования временной метки Unix в дату.
+         */
+
+//        //Unix seconds
+//        long unix_seconds = 1372339860;
+//        //convert seconds to milliseconds
+//        Date date = new Date(unix_seconds*1000L);
+//        // format of the date
+//        SimpleDateFormat jdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+//        jdf.setTimeZone(TimeZone.getTimeZone("GMT-4"));
+//        String java_date = jdf.format(date);
+//        System.out.println("\n"+java_date+"\n");
+
+        System.out.println("Exercise 37");
+
+        /*
+        Напишите Java-программу для получения секунд с 1970 года.
+         */
+
+        //Мой вариант
+//        long unixTime = System.currentTimeMillis() / 1000L;
+//        System.out.println("Seconds since 1970: " + unixTime);
+
+        //Вариант 2
+//        long seconds = System.currentTimeMillis() / 1000l;
+//        System.out.println("\nSeconds since 1970: "+seconds+"\n");
     }
 }
