@@ -16,14 +16,14 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 1");
 
         /*
-        Напишите программу на Java для создания объекта Date с использованием класса Calendar.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РѕР±СЉРµРєС‚Р° Date СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РєР»Р°СЃСЃР° Calendar.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        System.out.println("The Current Date is:\n" + c.getTime());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        int year = 2016;
 //        int month = 0; // January
 //        int date = 1;
@@ -41,10 +41,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 2");
 
         /*
-        Напишите Java-программу для получения и отображения информации (год, месяц, день, час, минута) календаря по умолчанию.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Рё РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё (РіРѕРґ, РјРµСЃСЏС†, РґРµРЅСЊ, С‡Р°СЃ, РјРёРЅСѓС‚Р°) РєР°Р»РµРЅРґР°СЂСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println("Current Calendar's Year: " + calendar.get(Calendar.YEAR));
 //        System.out.println("Current Calendar's Month: " + calendar.get(Calendar.MONTH));
@@ -52,7 +52,7 @@ public class Date_calendar_and_time1_37 {
 //        System.out.println("Current HOUR: " + calendar.get(Calendar.HOUR));
 //        System.out.println("Current MINUTE: " + calendar.get(Calendar.MINUTE));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Create a default calendar
 //        Calendar cal = Calendar.getInstance();
 //        // Get and display information of current date from the calendar:
@@ -67,10 +67,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 3");
 
         /*
-        Напишите программу на Java, чтобы получить максимальное значение года, месяца, недели, даты из текущей даты календаря по умолчанию.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РіРѕРґР°, РјРµСЃСЏС†Р°, РЅРµРґРµР»Рё, РґР°С‚С‹ РёР· С‚РµРєСѓС‰РµР№ РґР°С‚С‹ РєР°Р»РµРЅРґР°СЂСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println("The Current Date is:" + calendar.getTime());
 //        System.out.println("Actual Maximum Year: " + calendar.getActualMaximum(Calendar.YEAR));
@@ -78,7 +78,7 @@ public class Date_calendar_and_time1_37 {
 //        System.out.println("Actual Maximum Week of Year: " + calendar.getActualMaximum(Calendar.WEEK_OF_YEAR));
 //        System.out.println("Actual Maximum Date: " + calendar.getActualMaximum(Calendar.DATE));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Create a default calendar
 //        Calendar cal = Calendar.getInstance();
 //        System.out.println();
@@ -97,10 +97,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 4");
 
         /*
-        Напишите программу на Java, чтобы получить минимальное значение года, месяца, недели, даты из текущей даты календаря по умолчанию.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РіРѕРґР°, РјРµСЃСЏС†Р°, РЅРµРґРµР»Рё, РґР°С‚С‹ РёР· С‚РµРєСѓС‰РµР№ РґР°С‚С‹ РєР°Р»РµРЅРґР°СЂСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println("The Current Date is:" + calendar.getTime());
 //        System.out.println("Actual Minimum Year: " + calendar.getActualMinimum(Calendar.YEAR));
@@ -108,7 +108,7 @@ public class Date_calendar_and_time1_37 {
 //        System.out.println("Actual Minimum Week of Year: " + calendar.getActualMinimum(Calendar.WEEK_OF_YEAR));
 //        System.out.println("Actual Minimum Date: " + calendar.getActualMinimum(Calendar.DATE));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Create a default calendar
 //        Calendar cal = Calendar.getInstance();
 //        System.out.println();
@@ -127,15 +127,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 5");
 
         /*
-        Напишите программу на Java, чтобы узнать текущее время в Нью-Йорке.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ РІ РќСЊСЋ-Р™РѕСЂРєРµ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        ZoneId zone = ZoneId.of("America/New_York");
 //        ZonedDateTime time = ZonedDateTime.now(zone);
 //        System.out.println("Time in New York: " + time.getHour() + ":" + time.getMinute() + ":" + time.getSecond());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Calendar calNewYork = Calendar.getInstance();
 //        calNewYork.setTimeZone(TimeZone.getTimeZone("America/New_York"));
 //        System.out.println();
@@ -146,16 +146,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 6");
 
         /*
-        Напишите программу на Java, чтобы получить текущую полную дату и время.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ С‚РµРєСѓС‰СѓСЋ РїРѕР»РЅСѓСЋ РґР°С‚Сѓ Рё РІСЂРµРјСЏ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        ZoneId zone = ZoneId.of("Europe/Samara");
 //        ZonedDateTime time = ZonedDateTime.now(zone);
 //        System.out.println("Date and time in Togliatti: " + time.getDayOfMonth() + time.getMonth() + "-" + time.getYear() + " "
 //                + time.getHour() + ":" + time.getMinute() + ":" + time.getSecond());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Calendar now = Calendar.getInstance();
 //        System.out.println();
 //        System.out.println("Current full date and time is : " + (now.get(Calendar.MONTH) + 1) + "-"
@@ -167,15 +167,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 7");
 
         /*
-        Напишите программу на Java, чтобы узнать последний день текущего месяца.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ РїРѕСЃР»РµРґРЅРёР№ РґРµРЅСЊ С‚РµРєСѓС‰РµРіРѕ РјРµСЃСЏС†Р°.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        int actualMaxDay = c.getActualMaximum(c.DAY_OF_MONTH);
 //        System.out.println("Last date of the current month: " + actualMaxDay);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        //Gets a calendar using the default time zone and locale.
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println();
@@ -185,15 +185,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 8");
 
         /*
-        Напишите программу на Java, чтобы узнать последнюю дату месяца.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ РїРѕСЃР»РµРґРЅСЋСЋ РґР°С‚Сѓ РјРµСЃСЏС†Р°.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        c.set(c.DAY_OF_MONTH, c.getActualMaximum(c.DAY_OF_MONTH));
 //        System.out.println(c.getTime());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Calendar cal = Calendar.getInstance();
 //        //  cal.setTime(date);
 //        System.out.println();
@@ -204,10 +204,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 9");
 
         /*
-        Напишите программу на Java для расчета первого и последнего дня каждой недели.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ СЂР°СЃС‡РµС‚Р° РїРµСЂРІРѕРіРѕ Рё РїРѕСЃР»РµРґРЅРµРіРѕ РґРЅСЏ РєР°Р¶РґРѕР№ РЅРµРґРµР»Рё.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        c.set(c.DAY_OF_WEEK, c.MONDAY);
 //
@@ -219,7 +219,7 @@ public class Date_calendar_and_time1_37 {
 //        }
 //        System.out.println(df.format(c.getTime()));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Get calendar set to current date and time
 //        Calendar c = Calendar.getInstance();
 //        // Set the calendar to monday of the current week
@@ -237,7 +237,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 10");
 
         /*
-        Напишите программу на Java, чтобы получить имя первого и последнего дня месяца.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРјСЏ РїРµСЂРІРѕРіРѕ Рё РїРѕСЃР»РµРґРЅРµРіРѕ РґРЅСЏ РјРµСЃСЏС†Р°.
          */
 
 //        YearMonth ym = YearMonth.of(2016, 9);
@@ -251,14 +251,14 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 11");
 
         /*
-        Напишите программу на Java, чтобы узнать количество дней в месяце.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№ РІ РјРµСЃСЏС†Рµ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println("Number of days of the current month : " + calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Calendar cal = Calendar.getInstance();
 //        int days = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
 //        System.out.println();
@@ -268,16 +268,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 12");
 
         /*
-        Напишите программу на Java, чтобы получить локализованное название дня в неделю.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ Р»РѕРєР°Р»РёР·РѕРІР°РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ РґРЅСЏ РІ РЅРµРґРµР»СЋ.
          */
 
-        //Мой вариант
-//        //Не так понял задание
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
+//        //РќРµ С‚Р°Рє РїРѕРЅСЏР» Р·Р°РґР°РЅРёРµ
 //        ZoneId zone = ZoneId.of("Europe/Samara");
 //        ZonedDateTime time = ZonedDateTime.now(zone);
 //        System.out.println("Localized name of the day of the week: " + time.getDayOfWeek());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        DateFormatSymbols symbols = new DateFormatSymbols(new Locale("de"));
 //        // for the current Locale :
 //        //   DateFormatSymbols symbols = new DateFormatSymbols();
@@ -290,15 +290,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 13");
 
         /*
-        Напишите программу на Java, чтобы получить день недели с определенной датой.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґРµРЅСЊ РЅРµРґРµР»Рё СЃ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РґР°С‚РѕР№.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        int day = c.get(Calendar.DAY_OF_WEEK);
 //        System.out.println("Day of the week : " + day);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Create a default calendar
 //        Calendar cal = Calendar.getInstance();
 //        //Set your date: cal.setTime(yourDate);
@@ -310,14 +310,14 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 14");
 
         /*
-        Напишите программу на Java, чтобы узнать текущее местное время.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ С‚РµРєСѓС‰РµРµ РјРµСЃС‚РЅРѕРµ РІСЂРµРјСЏ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalTime time = LocalTime.now();
 //        System.out.println("Now = " + time);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        LocalTime time = LocalTime.now();
 //        System.out.println();
 //        // in hour, minutes, seconds, nano seconds
@@ -327,15 +327,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 15");
 
         /*
-        Напишите программу на Java, чтобы добавить несколько часов к текущему времени.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РґРѕР±Р°РІРёС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃРѕРІ Рє С‚РµРєСѓС‰РµРјСѓ РІСЂРµРјРµРЅРё.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        c.add(Calendar.HOUR, 2);
 //        System.out.println("Time after 2 hours : " + c.getTime());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        LocalTime time = LocalTime.now();
 //        // adding four hours
 //        LocalTime newTime = time.plusHours(2);
@@ -346,16 +346,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 16");
 
         /*
-        Напишите программу на Java, чтобы получить дату через 2 недели.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґР°С‚Сѓ С‡РµСЂРµР· 2 РЅРµРґРµР»Рё.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        System.out.println("Current Date: " + c.getTime());
 //        c.add(Calendar.WEEK_OF_MONTH, 2);
 //        System.out.println("Time after 2 week : " + c.getTime());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        //two weeks
 //        int noOfDays = 14;
 //        Calendar cal = Calendar.getInstance();
@@ -368,10 +368,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 17");
 
         /*
-        Напишите программу на Java, чтобы получить дату до и после 1 года сравнения с текущей датой.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґР°С‚Сѓ РґРѕ Рё РїРѕСЃР»Рµ 1 РіРѕРґР° СЃСЂР°РІРЅРµРЅРёСЏ СЃ С‚РµРєСѓС‰РµР№ РґР°С‚РѕР№.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        System.out.println("Current Date: " + c.getTime());
 //        c.add(Calendar.YEAR, 1);
@@ -379,7 +379,7 @@ public class Date_calendar_and_time1_37 {
 //        c.add(Calendar.YEAR, -2);
 //        System.out.println("Time 1 year ago : " + c.getTime());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Calendar cal = Calendar.getInstance();
 //        Date cdate = cal.getTime();
 //        // get next year
@@ -395,15 +395,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 18");
 
         /*
-        Написать программу на Java, чтобы проверить, является ли год високосным или нет.
+        РќР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїСЂРѕРІРµСЂРёС‚СЊ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё РіРѕРґ РІРёСЃРѕРєРѕСЃРЅС‹Рј РёР»Рё РЅРµС‚.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDate today = LocalDate.now();
 //        System.out.println("Current year: " + today.getYear());
 //        System.out.println("Is a leap year: " + today.isLeapYear());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        //year to leap year or not
 //        int year = 2016;
 //        System.out.println();
@@ -416,7 +416,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 19");
 
         /*
-        Напишите программу на Java, чтобы получить год и месяцы между двумя датами.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РіРѕРґ Рё РјРµСЃСЏС†С‹ РјРµР¶РґСѓ РґРІСѓРјСЏ РґР°С‚Р°РјРё.
          */
 
 //        LocalDate today = LocalDate.now();
@@ -428,21 +428,21 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 20");
 
         /*
-        Напишите программу на Java, чтобы получить текущую метку времени.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ С‚РµРєСѓС‰СѓСЋ РјРµС‚РєСѓ РІСЂРµРјРµРЅРё.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Instant instant = Instant.now();
 //        System.out.println("Timestamp: " + instant);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        Instant timestamp = Instant.now();
 //        System.out.println("\nCurrent Timestamp: " + timestamp+"\n");
 
         System.out.println("Exercise 21");
 
         /*
-        Напишите программу на Java, чтобы узнать текущее время во всех доступных часовых поясах.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ РІРѕ РІСЃРµС… РґРѕСЃС‚СѓРїРЅС‹С… С‡Р°СЃРѕРІС‹С… РїРѕСЏСЃР°С….
          */
 
 //        ZoneId.SHORT_IDS.keySet().
@@ -453,10 +453,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 22");
 
         /*
-        Напишите программу на Java, чтобы получить даты за 10 дней до и после сегодняшнего дня.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґР°С‚С‹ Р·Р° 10 РґРЅРµР№ РґРѕ Рё РїРѕСЃР»Рµ СЃРµРіРѕРґРЅСЏС€РЅРµРіРѕ РґРЅСЏ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        Calendar c = Calendar.getInstance();
 //        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 //        System.out.println("Current Date: " + df.format(c.getTime()));
@@ -465,7 +465,7 @@ public class Date_calendar_and_time1_37 {
 //        c.add(Calendar.DAY_OF_MONTH, -20);
 //        System.out.println("Time 10 days ago : " + df.format(c.getTime()));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        LocalDate today = LocalDate.now();
 //        System.out.println("\nCurrent Date: "+today);
 //        System.out.println("10 days before today will be "+today.plusDays(-10));
@@ -474,7 +474,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 23");
 
         /*
-        Напишите программу на Java, чтобы получить месяцы, оставшиеся в году.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РјРµСЃСЏС†С‹, РѕСЃС‚Р°РІС€РёРµСЃСЏ РІ РіРѕРґСѓ.
          */
 
 //        LocalDate today = LocalDate.now();
@@ -487,10 +487,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 24");
 
         /*
-        Напишите программу на Java для отображения дат в указанных форматах.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РґР°С‚ РІ СѓРєР°Р·Р°РЅРЅС‹С… С„РѕСЂРјР°С‚Р°С….
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDate today = LocalDate.now();
 //        DateTimeFormatter dateformatter = DateTimeFormatter.ofPattern("dd :: MMMM :: y");
 //        System.out.println("Default format LocalDate = " + today);
@@ -504,7 +504,7 @@ public class Date_calendar_and_time1_37 {
 //        Instant cur = Instant.now();
 //        System.out.println("Default format Instant = " + cur);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        //Format examples
 //        LocalDate date = LocalDate.now();
 //        //default format
@@ -528,16 +528,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 25");
 
         /*
-        Напишите программу на Java, чтобы получить информацию о текущем / данном году.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РµРєСѓС‰РµРј / РґР°РЅРЅРѕРј РіРѕРґСѓ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDate today = LocalDate.now();
 //        System.out.println("Current year: " + today.getYear());
 //        System.out.println("Is a leap year: " + today.isLeapYear());
 //        System.out.println("Duration of the year: " + today.lengthOfYear());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        //Current year
 //        Year yr = Year.now();
 //        //given year
@@ -551,7 +551,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 26");
 
         /*
-        Напишите программу на Java, чтобы получить информацию о текущем / данном месяце.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РµРєСѓС‰РµРј / РґР°РЅРЅРѕРј РјРµСЃСЏС†Рµ.
          */
 
 //        // information about the month
@@ -569,10 +569,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 27");
 
         /*
-        Напишите программу на Java, чтобы получить информацию о данном времени.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РґР°РЅРЅРѕРј РІСЂРµРјРµРЅРё.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalTime time = LocalTime.now();
 //        DateTimeFormatter dateformatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 //        System.out.println("Current local time: " + dateformatter.format(time));
@@ -580,7 +580,7 @@ public class Date_calendar_and_time1_37 {
 //        System.out.println("Minute: " + time.getMinute());
 //        System.out.println("Second: " + time.getSecond());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        LocalTime time = LocalTime.of(12, 24, 32);
 //        int hour = time.getHour();
 //        int minute = time.getMinute();
@@ -593,15 +593,15 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 28");
 
         /*
-        Напишите программу на Java для отображения информации о дате и времени раньше, чем через несколько часов и минут от текущей даты.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РґР°С‚Рµ Рё РІСЂРµРјРµРЅРё СЂР°РЅСЊС€Рµ, С‡РµРј С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃРѕРІ Рё РјРёРЅСѓС‚ РѕС‚ С‚РµРєСѓС‰РµР№ РґР°С‚С‹.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDateTime time = LocalDateTime.now();
 //        System.out.println("Current date and time " + time);
 //        System.out.println("Up to 7 hours and 30 minutes: " + time.minusHours(7).minusMinutes(30));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // Before 7 houres and 30 minutes
 //        LocalDateTime dateTime = LocalDateTime.now().minusHours(5).minusMinutes(30);
 //        System.out.println("\nCurrent Date and Time:  " + LocalDateTime.now());
@@ -610,17 +610,17 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 29");
 
         /*
-        Напишите программу на Java для преобразования строки в дату.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЃС‚СЂРѕРєРё РІ РґР°С‚Сѓ.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        String string = "2016-05-01";
 //        System.out.println("Original string (that holds date value) : "+string);
 //        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 //        LocalDate dateObject = LocalDate.parse(string);
 //        System.out.println("Converted Date value : " + df.format(dateObject));
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        String string ="May 1, 2016";
 //        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH);
 //        LocalDate date = LocalDate.parse(string, formatter);
@@ -631,16 +631,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 30");
 
         /*
-        Напишите программу на Java, чтобы вычислить разницу между двумя датами (год, месяцы, дни).
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java, С‡С‚РѕР±С‹ РІС‹С‡РёСЃР»РёС‚СЊ СЂР°Р·РЅРёС†Сѓ РјРµР¶РґСѓ РґРІСѓРјСЏ РґР°С‚Р°РјРё (РіРѕРґ, РјРµСЃСЏС†С‹, РґРЅРё).
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDate date = LocalDate.of(2020, 03, 04);
 //        LocalDate now = LocalDate.now();
 //        Period period = Period.between(date, now);
 //        System.out.printf("\nDifference is %d years, %d months and %d days old\n\n", period.getYears(), period.getMonths(), period.getDays());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        LocalDate pdate = LocalDate.of(2012, 01, 01);
 //        LocalDate now = LocalDate.now();
 //
@@ -652,7 +652,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 31");
 
         /*
-        Напишите программу на Java для вычисления разницы между двумя датами в часах, минутах, миллисекундах и наносекундах.
+        РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РЅР° Java РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ СЂР°Р·РЅРёС†С‹ РјРµР¶РґСѓ РґРІСѓРјСЏ РґР°С‚Р°РјРё РІ С‡Р°СЃР°С…, РјРёРЅСѓС‚Р°С…, РјРёР»Р»РёСЃРµРєСѓРЅРґР°С… Рё РЅР°РЅРѕСЃРµРєСѓРЅРґР°С….
          */
 
 //        LocalDateTime dateTime = LocalDateTime.of(2016, 9, 16, 0, 0);
@@ -668,16 +668,16 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 32");
 
         /*
-        Напишите Java-программу для вычисления вашего возраста.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РІР°С€РµРіРѕ РІРѕР·СЂР°СЃС‚Р°.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        LocalDate date = LocalDate.of(1994, 10, 19);
 //        LocalDate now = LocalDate.now();
 //        Period period = Period.between(date, now);
 //        System.out.printf("\nMy age is %d years, %d months and %d days \n\n", period.getYears(), period.getMonths(), period.getDays());
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        // date of birth
 //        LocalDate pdate = LocalDate.of(1989, 04, 11);
 //        // current date
@@ -691,7 +691,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 33");
 
         /*
-        Напишите Java-программу, чтобы получить следующую и предыдущую пятницы.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ Рё РїСЂРµРґС‹РґСѓС‰СѓСЋ РїСЏС‚РЅРёС†С‹.
          */
 
 //        LocalDate dt = LocalDate.now();
@@ -701,7 +701,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 34");
 
         /*
-        Напишите Java-программу, чтобы получить сегодняшнюю дату в полночь.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ СЃРµРіРѕРґРЅСЏС€РЅСЋСЋ РґР°С‚Сѓ РІ РїРѕР»РЅРѕС‡СЊ.
          */
 
 //        Calendar cal = new GregorianCalendar();
@@ -713,10 +713,10 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 35");
 
         /*
-        Напишите Java-программу для извлечения даты и времени из строки даты.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ РёР·РІР»РµС‡РµРЅРёСЏ РґР°С‚С‹ Рё РІСЂРµРјРµРЅРё РёР· СЃС‚СЂРѕРєРё РґР°С‚С‹.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        try {
 //            String string = "2016-05-01 13:38:08";
 //            System.out.println("Original string (that holds date value) : "+string);
@@ -727,7 +727,7 @@ public class Date_calendar_and_time1_37 {
 //            e.printStackTrace();
 //        }
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        try {
 //            String originalString = "2016-07-14 09:00:02";
 //            Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(originalString);
@@ -742,7 +742,7 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 36");
 
         /*
-        Напишите Java-программу для преобразования временной метки Unix в дату.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІСЂРµРјРµРЅРЅРѕР№ РјРµС‚РєРё Unix РІ РґР°С‚Сѓ.
          */
 
 //        //Unix seconds
@@ -758,14 +758,14 @@ public class Date_calendar_and_time1_37 {
         System.out.println("Exercise 37");
 
         /*
-        Напишите Java-программу для получения секунд с 1970 года.
+        РќР°РїРёС€РёС‚Рµ Java-РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃРµРєСѓРЅРґ СЃ 1970 РіРѕРґР°.
          */
 
-        //Мой вариант
+        //РњРѕР№ РІР°СЂРёР°РЅС‚
 //        long unixTime = System.currentTimeMillis() / 1000L;
 //        System.out.println("Seconds since 1970: " + unixTime);
 
-        //Вариант 2
+        //Р’Р°СЂРёР°РЅС‚ 2
 //        long seconds = System.currentTimeMillis() / 1000l;
 //        System.out.println("\nSeconds since 1970: "+seconds+"\n");
     }
