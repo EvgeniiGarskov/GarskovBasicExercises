@@ -1,6 +1,6 @@
 package BasicExercises.String;
 
-public class String1_44 {
+public class String1_5 {
 
     public static void main(String[] args) {
 
